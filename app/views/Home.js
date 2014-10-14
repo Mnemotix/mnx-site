@@ -18,7 +18,6 @@ define([ 'jquery',
             var html = this.template();
             $(this.el).html(html);
 
-
             carousel.owlElementID = "#owl-main";
             carousel.init();
 

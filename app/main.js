@@ -80,19 +80,12 @@ require(['jquery', 'backbone',
     'vwunits',
     'easing',
     'bootstrap',
-    'skrollrss',
     'dropdown',
-    'waypoints',
     'wpointstick',
     'scrollUp'
 ], function ($, Backbone, Router, VUBuggyfill) {
 
     var jQuery = $; // utilise pour le plugin easytab
-
-    /*===================================================================================*/
-    /*	STICKY NAVIGATION
-     /*===================================================================================*/
-    $('.navbar .navbar-collapse').waypoint('sticky');
 
     /*===================================================================================*/
     /*	DROPDOWN ON HOVER (NAVIGATION)
@@ -102,47 +95,6 @@ require(['jquery', 'backbone',
         delay: 0
     }).dropdown();
 
-
-    /*===================================================================================*/
-    /*	ANIMATIONS ON SCROLL
-     /*===================================================================================*/
-
-    /*var waypointClass = '[class*="animate"]';
-     $(waypointClass).css({opacity: '0'});
-
-     $(waypointClass).waypoint(function() {
-     var animationClass = $(this).attr('class').split('animate-')[1];
-     var delayTime = $(this).data('delay');
-     $(this).delay(delayTime).queue(function(next){
-     $(this).toggleClass('animated');
-     $(this).toggleClass(animationClass);
-     next();
-     });
-     },
-     {
-     offset: '90%',
-     triggerOnce: true
-     });*/
-
-    var waypointClass = 'main [class*="col-"]';
-    var animationClass = 'fadeInUp';
-    var delayTime;
-    $(waypointClass).css({opacity: '0'});
-
-    $(waypointClass).waypoint(function() {
-            delayTime += 100;
-            $(this).delay(delayTime).queue(function(next){
-                $(this).toggleClass('animated');
-                $(this).toggleClass(animationClass);
-                delayTime = 0;
-                next();
-            });
-        },
-        {
-            offset: '90%',
-            triggerOnce: true
-        }
-    );
 
     /*===================================================================================*/
     /*	GO TO TOP / SCROLL UP
