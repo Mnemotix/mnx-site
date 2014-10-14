@@ -2,7 +2,6 @@ define([ 'jquery',
     'backbone',
     'handlebars',
     'text!app/templates/mnxdatalab.html'
-    'scripts'
 ], function($, Backbone, Handlebars, tpl) {
 
     "use strict";

@@ -690,7 +690,7 @@ figure.post-media + * {
 	display: block;
 	padding-top: 47%;
 }
-.screen-container .tab-content {
+.screen-container .tab-pane {
 	position: absolute;
 	top: 0;
 	right: 0;

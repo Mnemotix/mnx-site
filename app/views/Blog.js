@@ -1,8 +1,7 @@
 define([ 'jquery',
     'backbone',
     'handlebars',
-    'text!app/templates/blog.html',
-    'scripts'
+    'text!app/templates/blog.html'
 ], function($, Backbone, Handlebars, tpl) {
 
     "use strict";
