@@ -2166,6 +2166,7 @@ p .btn {
 }
 .tabs-circle-top .tab.active {
 	top: -15px;
+    background-color: transparent;
 }
 .tabs-circle-top .tab.active a {
 	height: 160px;
