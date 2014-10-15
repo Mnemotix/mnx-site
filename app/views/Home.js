@@ -2,10 +2,10 @@ define([ 'jquery',
     'backbone',
     'handlebars',
     'text!app/templates/home.html',
+    'app/modules/waypoints',
     'app/modules/carousel',
-    'app/modules/skrollr',
     'isotope'
-], function($, Backbone, Handlebars, tpl, carousel, skrollr) {
+], function($, Backbone, Handlebars, tpl, waypoints, carousel) {
 
     "use strict";
 
@@ -91,7 +91,7 @@ define([ 'jquery',
             });
 
 
-            skrollr.init();
+            waypoints.init();
 
             return this;
         }

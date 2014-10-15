@@ -4,12 +4,14 @@ define([ 'jquery', 'backbone'], function($, Backbone) {
 
     return Backbone.Router.extend({
         routes: {
-            ""          : "home",             // correspond à une requête index.html sans rien ou juste avec un #
-            "whatwedo"  : "whatwedo",
-            "mnxdatalab": "mnxdatalab",
-            "about"     : "about",            // correspond à une requête index.html#about
-            "blog"      : "blog",             // correspond à une requête index.html#blog
-            "contact"   : "contact"           // correspond à une requête index.html#contact
+            ""          : "home",               // correspond à une requête index.html sans rien ou juste avec un #
+            "whatwedo"  : "whatwedo",           // correspond à une requête index.html#about
+            "mnxdatalab": "mnxdatalab",         // ...
+            "about"     : "about",
+            "questions" : "questions",
+            "glossary"  : "glossary",
+            "blog"      : "blog", 
+            "contact"   : "contact"
         },
 
         home: function () {
@@ -29,15 +31,18 @@ define([ 'jquery', 'backbone'], function($, Backbone) {
 
             });
         },
-        mnxdatalab: function () {
-            this.selectMenuItem("whatwedo-menu");
-            require(["app/views/MNXdatalab"], function (MNXdatalabView) {
-                var view = new MNXdatalabView();
-                view.delegateEvents();
-                view.render();
+        // Services
+            mnxdatalab: function () {
+                this.selectMenuItem("whatwedo-menu");
+                require(["app/views/MNXdatalab"], function (MNXdatalabView) {
+                    var view = new MNXdatalabView();
+                    view.delegateEvents();
+                    view.render();
 
-            });
-        },
+                });
+            },
+        // Solutions
+        // Labs
         about: function () {
             this.selectMenuItem("about-menu");
             require(["app/views/About"], function (AboutView) {
@@ -46,6 +51,25 @@ define([ 'jquery', 'backbone'], function($, Backbone) {
                 view.render();
             });
         },
+        // Ressources
+            questions: function () {
+                this.selectMenuItem("ressources-menu");
+                require(["app/views/Questions"], function (QuestionsView) {
+                    var view = new QuestionsView();
+                    view.delegateEvents();
+                    view.render();
+
+                });
+            },
+            glossary: function () {
+                this.selectMenuItem("ressources-menu");
+                require(["app/views/Glossary"], function (GlossaryView) {
+                    var view = new GlossaryView();
+                    view.delegateEvents();
+                    view.render();
+
+                });
+            },
         blog: function () {
             this.selectMenuItem("blog-menu");
             require(["app/views/Blog"], function (BlogView) {
@@ -62,6 +86,7 @@ define([ 'jquery', 'backbone'], function($, Backbone) {
                 view.render();
             });
         },
+
         selectMenuItem : function(itemClass, scrollValue){
             if(!scrollValue) scrollValue = 0;
             $(document).scrollTop(scrollValue);

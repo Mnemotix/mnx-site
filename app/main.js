@@ -9,22 +9,16 @@ require.config({
         handlebars  : 'assets/js/libs/handlebars-v2.0.0',
         jquery      : 'assets/js/libs/jquery-2.1.1.min',
         underscore  : 'assets/js/libs/underscore-min',
-        skrollr     : 'assets/js/libs/skrollr.min',
-        skrollrss   : 'assets/js/libs/skrollr.stylesheets.min',
         waypoints   : 'assets/js/libs/waypoints.min',
         ocarousel   : 'assets/js/libs/owl.carousel.min',
-        vwunits     : 'assets/js/libs/viewport-units-buggyfill',
+//      vwunits     : 'assets/js/libs/viewport-units-buggyfill',
 
         // plugins
         text        : 'assets/js/plugins/text',
         easing      : 'assets/js/plugins/jquery.easing.1.3.min',
-        forms       : 'assets/js/plugins/jquery.form',
-        validate    : 'assets/js/plugins/jquery.validate.min',
         scrollUp    : 'assets/js/plugins/jquery.scrollUp',
         dropdown    : 'assets/js/plugins/bootstrap-hover-dropdown.min',
-        wpointstick : 'assets/js/plugins/waypoints-sticky.min',
-        isotope     : 'assets/js/plugins/jquery.isotope.min',
-        easytabs    : 'assets/js/plugins/jquery.easytabs.min'
+        isotope     : 'assets/js/plugins/jquery.isotope.min'
     },
 
     // Shim declaration
@@ -43,24 +37,11 @@ require.config({
         easing:{
             deps: ['jquery']
         },
-        skrollr:{
-            deps: ['jquery'],
-            exports: "skrollr"
-        },
-        forms:{
-            deps: ['jquery']
-        },
-        validate:{
-            deps: ['jquery']
-        },
         dropdown:{
             deps: ['bootstrap']
         },
         waypoints:{
             deps: ['jquery']
-        },
-        wpointstick:{
-            deps: ['waypoints']
         },
         isotope:{
             deps: ['jquery']
@@ -68,20 +49,20 @@ require.config({
         scrollUp:{
             deps: ['jquery']
         },
+        /*
         vwunits:{
             deps: ['jquery'],
             exports: "VUBuggyfill"
-        }
+        }*/
     }
 });
 
 require(['jquery', 'backbone',
     'app/router',
-    'vwunits',
+//  'vwunits',
     'easing',
     'bootstrap',
     'dropdown',
-    'wpointstick',
     'scrollUp'
 ], function ($, Backbone, Router, VUBuggyfill) {
 

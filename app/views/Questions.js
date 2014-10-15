@@ -1,7 +1,7 @@
 define([ 'jquery',
     'backbone',
     'handlebars',
-    'text!app/templates/contact.html',
+    'text!app/templates/questions.html',
     'app/modules/waypoints'
 ], function($, Backbone, Handlebars, tpl, waypoints) {
 
@@ -13,7 +13,7 @@ define([ 'jquery',
             this.template = Handlebars.compile( tpl );
         },
         render : function() {
-            var html = this.template({ title : "Contact"});
+            var html = this.template({ title : "Questions"});
             $(this.el).html(html);
             waypoints.init();
             return this;

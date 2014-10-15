@@ -1,8 +1,9 @@
 define([ 'jquery',
     'backbone',
     'handlebars',
-    'text!app/templates/blog.html'
-], function($, Backbone, Handlebars, tpl) {
+    'text!app/templates/blog.html',
+    'app/modules/waypoints'
+], function($, Backbone, Handlebars, tpl, waypoints) {
 
     "use strict";
 
@@ -14,6 +15,7 @@ define([ 'jquery',
         render : function() {
             var html = this.template({ title : "Blog"});
             $(this.el).html(html);
+            waypoints.init();
             return this;
         }
     });

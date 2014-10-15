@@ -2,9 +2,9 @@ define([ 'jquery',
     'backbone',
     'handlebars',
     'text!app/templates/whatwedo.html',
-    'app/modules/carousel',
-    'app/modules/skrollr'
-], function($, Backbone, Handlebars, tpl, carousel, skrollr) {
+    'app/modules/waypoints',
+    'app/modules/carousel'
+], function($, Backbone, Handlebars, tpl, waypoints, carousel) {
 
     "use strict";
 
@@ -57,23 +57,7 @@ define([ 'jquery',
             });
 
 
-            skrollr.init();
-
-
-            /*===================================================================================*/
-            /*	TABS
-             /*===================================================================================*/
-
-            /*$('.tabs.tabs-services').easytabs({
-             cycle: 5000
-             });*/
-
-//            $('#services-tabs a:last').tab('show')
-//            $('#tab-container').easytabs();
-//            $('.tabs.tabs-top, .tabs.tabs-circle-top, .tabs.tabs-2-big-top, .tabs.tabs-side').easytabs({
-//                animationSpeed: 200,
-//                updateHash: false
-//            });
+            waypoints.init();
 
             return this;
         }
