@@ -7,7 +7,6 @@ define([ 'jquery', 'ocarousel'], function($) {
     var mnxCarousel = {
         dragging : true,
         carouselId : "",
-//        owlElementID : "#owl-main",
         fadeInReset:function() {
             if (!this.dragging) {
                 $(this.carouselId + " .caption .fadeIn-1, " + this.carouselId + " .caption .fadeIn-2, " + this.carouselId + " .caption .fadeIn-3").stop().delay(800).animate({ opacity: 0 }, { duration: 400, easing: "easeInCubic" });
@@ -86,7 +85,7 @@ define([ 'jquery', 'ocarousel'], function($) {
         init:function(carouselId) {
 
             this.carouselId = carouselId;
-            this.dragging = true;
+//            this.dragging = true;
 
             var self = this;
 
