@@ -84,6 +84,7 @@ define([ 'jquery', 'ocarousel'], function($) {
         },
 
         init:function(carouselId) {
+
             this.carouselId = carouselId;
             this.dragging = true;
 
