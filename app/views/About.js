@@ -2,8 +2,8 @@ define([ 'jquery',
     'backbone',
     'handlebars',
     'text!app/templates/about.html',
-    'app/modules/carousel'
-], function($, Backbone, Handlebars, tpl, carousel) {
+    'ocarousel'
+], function($, Backbone, Handlebars, tpl) {
 
     "use strict";
 
@@ -15,9 +15,6 @@ define([ 'jquery',
         render : function() {
             var html = this.template({ title : "About"});
             $(this.el).html(html);
-
-            carousel.owlElementID = "#owl-main";
-            carousel.init();
 
             $("#owl-testimonials").owlCarousel({
                 autoPlay: 5000,

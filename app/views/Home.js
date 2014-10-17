@@ -14,12 +14,25 @@ define([ 'jquery',
             this.template = Handlebars.compile( tpl );
         },
         render : function() {
+
             var html = this.template();
             $(this.el).html(html);
 
-            carousel.owlElementID = "#owl-main";
-            carousel.init();
+            /* ### BUGFIX : Correction du probleme de timers sur le carousel ### */
+            // on supprime tous les timeouts et tous les intervals attachés à la window courante
 
+            var intervalId = window.setInterval("", 9999);          // Get a reference to the last interval
+            var timeoutId  = window.setTimeout(function() {}, 0);   // Get a reference to the last timeout
+
+            while (intervalId--) window.clearInterval(intervalId);  // will do nothing if no interval with id is present
+            while (timeoutId--)  window.clearTimeout(timeoutId);    // will do nothing if no timeout with id is present
+
+            /* ### BUGFIX ### */
+
+            // Initialisation du caroussel principal
+            carousel.init("#owl-main");
+
+            // CAROUSSEL WORK
             $("#owl-work").owlCarousel({
                 autoPlay: 5000,
                 slideSpeed: 200,
@@ -34,6 +47,7 @@ define([ 'jquery',
                 navigationText: ["<i class='icon-left-open-mini'></i>", "<i class='icon-right-open-mini'></i>"]
             });
 
+            // CAROUSSEL CLIENTS
             $("#owl-clients").owlCarousel({
                 autoPlay: 5000,
                 stopOnHover: true,
@@ -45,14 +59,6 @@ define([ 'jquery',
                 pagination: true,
                 navigationText: ["<i class='icon-left-open-mini'></i>", "<i class='icon-right-open-mini'></i>"]
             });
-
-//            $(".slider-next").click(function () {
-//                carousel.next();
-//            });
-//
-//            $(".slider-prev").click(function () {
-//                carousel.previous();
-//            });
 
             /*===================================================================================*/
             /*	ISOTOPE BLOG

@@ -64,9 +64,7 @@ require(['jquery', 'backbone',
     'bootstrap',
     'dropdown',
     'scrollUp'
-], function ($, Backbone, Router, VUBuggyfill) {
-
-    var jQuery = $; // utilise pour le plugin easytab
+], function ($, Backbone, Router) {
 
     /*===================================================================================*/
     /*	DROPDOWN ON HOVER (NAVIGATION)

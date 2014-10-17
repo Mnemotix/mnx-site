@@ -2,8 +2,8 @@ define([ 'jquery',
     'backbone',
     'handlebars',
     'text!app/templates/whatwedo.html',
-    'app/modules/carousel'
-], function($, Backbone, Handlebars, tpl, carousel) {
+    'ocarousel'
+], function($, Backbone, Handlebars, tpl) {
 
     "use strict";
 
@@ -16,9 +16,6 @@ define([ 'jquery',
             var html = this.template({ title : "Whatwedo"});
             $(this.el).html(html);
 
-            carousel.owlElementID = "#owl-main";
-            carousel.init();
-
             $("#owl-clients").owlCarousel({
                 autoPlay: 5000,
                 stopOnHover: true,
@@ -30,7 +27,6 @@ define([ 'jquery',
                 pagination: true,
                 navigationText: ["<i class='icon-left-open-mini'></i>", "<i class='icon-right-open-mini'></i>"]
             });
-
 
             $("#owl-work-samples").owlCarousel({
                 autoPlay: 5000,
