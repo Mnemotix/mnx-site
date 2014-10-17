@@ -2,9 +2,8 @@ define([ 'jquery',
     'backbone',
     'handlebars',
     'text!app/templates/about.html',
-    'app/modules/waypoints',
     'app/modules/carousel'
-], function($, Backbone, Handlebars, tpl, waypoints, carousel) {
+], function($, Backbone, Handlebars, tpl, carousel) {
 
     "use strict";
 
@@ -32,7 +31,9 @@ define([ 'jquery',
                 navigationText: ["<i class='icon-left-open-mini'></i>", "<i class='icon-right-open-mini'></i>"]
             });
 
-            waypoints.init();
+            //ajoute un effet à l'affichage de la page
+            $('main [class*="col-"]').addClass("animated fadeInUp");
+            $(document).scrollTop(0);
 
             return this;
         }

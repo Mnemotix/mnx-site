@@ -88,8 +88,6 @@ define([ 'jquery', 'backbone'], function($, Backbone) {
         },
 
         selectMenuItem : function(itemClass, scrollValue){
-            if(!scrollValue) scrollValue = 0;
-            $(document).scrollTop(scrollValue);
             $('.nav li').removeClass('active'); // reset all
             if (itemClass) {
                 $('.' + itemClass).addClass('active');

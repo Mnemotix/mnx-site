@@ -5799,3 +5799,17 @@ input:focus:-ms-input-placeholder {
     border-color: #E6E9ED;
     color: #1ABB9C;
 }
+.animated {
+-webkit-animation-duration: .8s !important;
+animation-duration: .8s !important;
+}
+
+@media (max-width: 768px) {
+	#services .tab-pane {
+	opacity: 1;
+	display: block !important;
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+	border-bottom: 1px #eee solid;
+	}
+}

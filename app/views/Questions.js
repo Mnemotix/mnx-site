@@ -2,8 +2,7 @@ define([ 'jquery',
     'backbone',
     'handlebars',
     'text!app/templates/questions.html',
-    'app/modules/waypoints'
-], function($, Backbone, Handlebars, tpl, waypoints) {
+], function($, Backbone, Handlebars, tpl) {
 
     "use strict";
 
@@ -15,7 +14,11 @@ define([ 'jquery',
         render : function() {
             var html = this.template({ title : "Questions"});
             $(this.el).html(html);
-            waypoints.init();
+
+            //ajoute un effet à l'affichage de la page
+            $('main [class*="col-"]').addClass("animated fadeInUp");
+            $(document).scrollTop(0);
+
             return this;
         }
     });
