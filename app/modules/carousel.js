@@ -85,6 +85,8 @@ define([ 'jquery', 'ocarousel'], function($) {
 
         init:function(carouselId) {
             this.carouselId = carouselId;
+            this.dragging = true;
+
             var self = this;
 
             $(this.carouselId).owlCarousel({
