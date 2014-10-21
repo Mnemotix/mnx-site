@@ -87,7 +87,7 @@ define([ 'jquery', 'backbone'], function($, Backbone) {
             });
         },
 
-        selectMenuItem : function(itemClass, scrollValue){
+        selectMenuItem : function(itemClass){
             $('.nav li').removeClass('active'); // reset all
             if (itemClass) {
                 $('.' + itemClass).addClass('active');

@@ -14,10 +14,13 @@ define([ 'jquery',
         render : function() {
             var html = this.template({ title : "Blog"});
             $(this.el).html(html);
-
+                    
             //ajoute un effet à l'affichage de la page
             $('main [class*="col-"]').addClass("animated fadeInUp");
+            // remonte la page
             $(document).scrollTop(0);
+            // masque la navbar
+            $('.navbar-collapse').removeClass('in');
 
             return this;
         }

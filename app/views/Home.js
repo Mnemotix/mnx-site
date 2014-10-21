@@ -17,6 +17,13 @@ define([ 'jquery',
 
             var html = this.template();
             $(this.el).html(html);
+            
+            //ajoute un effet à l'affichage de la page
+            $('main [class*="col-"]').addClass("animated fadeInUp");
+            // remonte la page
+            $(document).scrollTop(0);
+            // masque la navbar
+            $('.navbar-collapse').removeClass('in');
 
             /* ### BUGFIX : Correction du probleme de timers sur le carousel ### */
             // on supprime tous les timeouts et tous les intervals attachés à la window courante
@@ -94,10 +101,6 @@ define([ 'jquery',
             $(window).on('resize', function () {
                 $('.posts').isotope('reLayout')
             });
-
-            //ajoute un effet à l'affichage de la page
-            $('main [class*="col-"]').addClass("animated fadeInUp");
-            $(document).scrollTop(0);
 
             return this;
         }

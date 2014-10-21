@@ -1,7 +1,7 @@
 'use strict';
 
 require.config({
-    baseUrl: '/mnx-site',
+    baseUrl: '',
     paths: {
         //libs
         backbone    : 'assets/js/libs/backbone-min',
@@ -9,12 +9,12 @@ require.config({
         handlebars  : 'assets/js/libs/handlebars-v2.0.0',
         jquery      : 'assets/js/libs/jquery-2.1.1.min',
         underscore  : 'assets/js/libs/underscore-min',
-        waypoints   : 'assets/js/libs/waypoints.min',
         ocarousel   : 'assets/js/libs/owl.carousel.min',
 //      vwunits     : 'assets/js/libs/viewport-units-buggyfill',
 
         // plugins
         text        : 'assets/js/plugins/text',
+        headroom    : 'assets/js/plugins/headroom.js.min',
         easing      : 'assets/js/plugins/jquery.easing.1.3.min',
         scrollUp    : 'assets/js/plugins/jquery.scrollUp',
         dropdown    : 'assets/js/plugins/bootstrap-hover-dropdown.min',
@@ -40,9 +40,6 @@ require.config({
         dropdown:{
             deps: ['bootstrap']
         },
-        waypoints:{
-            deps: ['jquery']
-        },
         isotope:{
             deps: ['jquery']
         },
@@ -60,11 +57,19 @@ require.config({
 require(['jquery', 'backbone',
     'app/router',
 //  'vwunits',
+    'headroom',
     'easing',
     'bootstrap',
     'dropdown',
     'scrollUp'
-], function ($, Backbone, Router) {
+], function ($, Backbone, Router, headroom) {
+
+    /*===================================================================================*/
+    /*  HEADER EFFECTS
+     /*===================================================================================*/
+    var myElement = document.querySelector("header");
+    var headroom  = new Headroom(myElement, {"offset": 320,"tolerance": 10});
+    headroom.init(); 
 
     /*===================================================================================*/
     /*	DROPDOWN ON HOVER (NAVIGATION)
@@ -136,7 +141,6 @@ require(['jquery', 'backbone',
     /*	CONVERTING iOS SAFARI VIEWPORT UNITS (BUGGY) INTO PIXELS
      /*===================================================================================*/
 //    VUBuggyfill.init(true);
-
 
     // initialisation de Backbone
     window.app = new Router();

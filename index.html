@@ -11,7 +11,6 @@
     <title>Mnemotix, du sens à vos données</title>
 
     <!-- Libs CSS -->
-    <link href="assets/css/normalize.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 		
 	<!-- Customizable CSS -->
@@ -38,35 +37,28 @@
 <body>
 		
 	<!-- ============================================================= HEADER ============================================================= -->
-	<header>
+	<header class="headroom" data-headroom data-tolerance="5" data-offset="205" >
 		<div class="navbar">
 				
-				<div class="navbar-header">
-					<div class="container">
+			<div class="navbar-header">
+				<div class="container">
+				
+					<!-- LOGO MOBILE ============================================================= -->					
+					<a class="navbar-brand" href="#"><img src="assets/images/logo.svg" class="logo" alt=""></a>
+					<a class="btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse"><i class='icon-menu-1'></i></a>
 					
-						<!-- ============================================================= LOGO MOBILE ============================================================= -->
-						
-						<a class="navbar-brand" href="#"><img src="assets/images/logo.svg" class="logo" alt=""></a>
-						
-						<!-- ============================================================= LOGO MOBILE : END ============================================================= -->
-						
-						<a class="btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse"><i class='icon-menu-1'></i></a>
-						
-					</div><!-- /.container -->
-				</div><!-- /.navbar-header -->
+				</div>
+			</div><!-- /.navbar-header -->
 			
 			<div class="yamm">
 				<div class="navbar-collapse collapse">
 					<div class="container">
 						
-						<!-- ============================================================= LOGO ============================================================= -->
+						<!-- LOGO ============================================================= -->
 						
 						<a class="navbar-brand" href="#"><img src="assets/images/logo.svg" class="logo" alt=""></a>
 						
-						<!-- ============================================================= LOGO : END ============================================================= -->
-						
-						
-						<!-- ============================================================= MAIN NAVIGATION ============================================================= -->
+						<!-- MAIN NAVIGATION ============================================================= -->
 						
 						<ul class="nav navbar-nav">
 							
@@ -82,15 +74,15 @@
 								<a href="#" class="dropdown-toggle js-activated">Resources</a>								
 								<ul class="dropdown-menu" data-hover="dropdown">
 									<li><a href="#questions">Questions</a></li>
-									<li><a href="http://andersnoren.se/themes/hemingway/tag/apple-2/">Tutorials</a></li>
-									<li><a href="http://andersnoren.se/themes/hemingway/page-templates/archive-template/">Publications</a></li>
-									<li><a href="http://andersnoren.se/themes/hemingway/page-templates/archive-template/">Medias</a></li>
+									<li><a href="http://mnemotix.com/live/">Tutorials</a></li>
+									<li><a href="http://mnemotix.com/live/">Publications</a></li>
+									<li><a href="http://mnemotix.com/live/">Medias</a></li>
 									<li><a href="#glossary">Glossary</a></li>
 								</ul><!-- /.dropdown-menu -->
 							</li><!-- /.dropdown -->
 							
 							<li class="dropdown blog-menu">
-								<a href="http://andersnoren.se/themes/hemingway/" class="">Blog</a>
+								<a href="http://mnemotix.com/live/" class="">Blog</a>
 							</li>
 							
 							<li class="dropdown contact-menu">
@@ -102,8 +94,6 @@
 							</li>
 							
 						</ul><!-- /.nav -->
-						
-						<!-- ============================================================= MAIN NAVIGATION : END ============================================================= -->
 						
 					</div><!-- /.container -->
 				</div><!-- /.navbar-collapse -->

@@ -15,6 +15,13 @@ define([ 'jquery',
         render : function() {
             var html = this.template({ title : "Whatwedo"});
             $(this.el).html(html);
+            
+            //ajoute un effet à l'affichage de la page
+            $('main [class*="col-"]').addClass("animated fadeInUp");
+            // remonte la page
+            $(document).scrollTop(0);
+            // masque la navbar
+            $('.navbar-collapse').removeClass('in');
 
             $("#owl-clients").owlCarousel({
                 autoPlay: 5000,
@@ -50,10 +57,6 @@ define([ 'jquery',
                 transitionStyle: "fadeUp",
                 navigationText: ["<i class='icon-left-open-mini'></i>", "<i class='icon-right-open-mini'></i>"]
             });
-            
-            //ajoute un effet à l'affichage de la page
-            $('main [class*="col-"]').addClass("animated fadeInUp");
-            $(document).scrollTop(0);
 
             return this;
         }

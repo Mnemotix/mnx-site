@@ -1316,10 +1316,8 @@ aside .thumb figure {
 }
 .navbar-brand {
 	float: none;
-	display: table-cell;
 	vertical-align: middle;
     padding: 0;
-	max-width: 300px;
 }
 .navbar-header .navbar-brand {
 	display: none;
@@ -1328,20 +1326,21 @@ aside .thumb figure {
     float: none !important;
 	position: relative;
 	background: #F5F7FA;
-	border-bottom: 1px solid #E6E9ED;
+	border-bottom: none;
 	z-index: 0;
 }
 .navbar-header li,
 .navbar-header a {
 	display: table-cell;
 	vertical-align: middle;
-	height: 40px;
+	height: 85px;
+	max-width: 75%;
 }
 .navbar-collapse {
     position: relative;
     background-color: #FFF;
 	width: 100%;
-	border-bottom: 1px solid #E6E9ED;
+	border-bottom: none;
 }
 .stuck {
 	position: fixed !important;
@@ -1362,15 +1361,13 @@ aside .thumb figure {
     color: #506A85;
     padding: 15px 20px;
 	border: 1px solid rgba(255,255,255,0);
-	border-bottom: none;
-	-webkit-border-top-right-radius: 3px;
-	 -webkit-border-top-left-radius: 3px;
-	    -moz-border-radius-topright: 3px;
-	     -moz-border-radius-topleft: 3px;
-	        border-top-right-radius: 3px;
-	         border-top-left-radius: 3px;
+	border-radius: 3px;
 	bottom: -1px;
 	z-index: 1;
+}
+.navbar-nav > li > a.dropdown-toggle {
+	border-bottom: none;
+	border-radius: 3px 3px 0 0;
 }
 .skrollable-after .navbar-nav > li > a {
 	margin-top: -1px;
@@ -1382,7 +1379,7 @@ aside .thumb figure {
 	         border-top-left-radius: 0;
 }
 .nav > li > a:hover {
-    background-color: #F5F7FA;
+    background-color: #F7F9FC;
     border-color: #E6E9ED;
     color: #1ABB9C;
 }
@@ -1483,88 +1480,7 @@ aside .thumb figure {
 	height: 40px;
     font-size: 15px;
     padding: 0;
-    margin: 0;
-}
-
-
-/*===================================================================================*/
-/*	MEGA MENU
-/*===================================================================================*/
-
-.yamm .nav,
-.yamm .dropup,
-.yamm .dropdown,
-.yamm .collapse {
-    position: static;
-}
-.yamm .navbar-inner,
-.yamm .container {
-    position: relative;
-}
-.yamm .dropdown-menu {
-	top: auto;
-    left: auto;
-	-webkit-border-top-left-radius: 3px !important;
-	    -moz-border-radius-topleft: 3px !important;
-		    border-top-left-radius: 3px !important;
-}
-.yamm .dropdown-menu > li {
-    display: block;
-}
-.yamm .nav.pull-right .dropdown-menu {
-    right: 0;
-}
-.yamm .yamm-content {
-	font-size: 14px;
-	line-height: 22px;
-    padding: 30px 40px;
-	margin-left: -20px;
-	margin-right: -20px;
-}
-.yamm .yamm-content .inner {
-	padding: 0 20px;
-}
-.yamm .yamm-content li {
-	line-height: inherit;
-}
-.yamm .yamm-content:before,
-.yamm .yamm-content:after {
-    display: table;
-    content: "";
-    line-height: 0;
-}
-.yamm .yamm-content:after {
-    clear: both;
-}
-.yamm .nav > li > .dropdown-menu:after,
-.yamm .nav > li > .dropdown-menu:before {
-    display: none;
-}
-.yamm .yamm-content img {
-    width: 100%;
-}
-.yamm .yamm-content a {
-    color: inherit;
-}
-.yamm .yamm-content h4 {
-	text-transform: uppercase;
-	margin-bottom: 20px;
-}
-.yamm .yamm-content p {
-	font-size: inherit;
-	line-height: inherit;
-    margin-bottom: 15px;
-}
-.yamm .yamm-content .btn {
-	margin: 10px 0;
-}
-.yamm .yamm-content a:hover {
-    color: #1ABB9C;
-}
-.yamm .dropdown.yamm-fullwidth .dropdown-menu {
-    width: 100%;
-    left: 0;
-    right: 0;
+    margin: 24px 4px 0px 0px;;
 }
 
 
@@ -4396,18 +4312,6 @@ input:focus:-ms-input-placeholder {
 /*	RESPONSIVE
 /*===================================================================================*/
 
-@media (min-width: 1025px) {
-	.navbar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-	}
-	#page-wrapper {
-		margin-top: 52px;
-	}
-}
-
 @media (min-width: 1200px) { 
 	.container {
 	    padding-right: 0;
@@ -4949,7 +4853,7 @@ input:focus:-ms-input-placeholder {
 	
 	.navbar-header {
 		background: #FFF;
-	    padding: 25px 0;
+	    padding: 4px 0;
 	}
 	.btn.responsive-menu {
 	    display: table;
@@ -5794,14 +5698,61 @@ input:focus:-ms-input-placeholder {
 /*	CUSTOM
 /*===================================================================================*/
 
-.nav .active {
-    background-color: #F5F7FA;
-    border-color: #E6E9ED;
-    color: #1ABB9C;
+.navbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	/*border-bottom: 1px solid #D8D8D8;*/
+	box-shadow: inset 0 -1px 0 rgba( 0, 0, 0, 0.3 ), 0 1px 3px rgba( 0, 0, 0, 0.2 );
 }
+.pagetop {
+	padding-top: 75px;
+}
+@media (min-width: 1025px) {
+	.navbar-nav {
+		float: right;
+		margin-top: 35px;
+	}
+}
+
+
+.headroom .navbar {
+    -webkit-transition: transform 200ms linear;
+       -moz-transition: transform 200ms linear;
+        -ms-transition: transform 200ms linear;
+         -o-transition: transform 200ms linear;
+    		transition: all .5s;
+}
+.headroom--pinned .navbar {
+    -webkit-transform: translateY(0%);
+       -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+         -o-transform: translateY(0%);
+    		transform: translateY(0%);
+}
+.headroom--unpinned .navbar {
+    -webkit-transform: translateY(-100%);
+       -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+         -o-transform: translateY(-100%);
+    		transform: translateY(-100%);
+}
+
+
+.yamm .logo {
+	height: 90px;
+	margin: 8px 0;
+}
+.yamm .nav > li.active > a  {
+    background: #fbfbfb;
+    color: #F27A24;
+    border-radius: 3px;
+}
+
 .animated {
--webkit-animation-duration: .8s !important;
-animation-duration: .8s !important;
+	-webkit-animation-duration: .8s !important;
+	animation-duration: .8s !important;
 }
 
 @media (max-width: 768px) {
