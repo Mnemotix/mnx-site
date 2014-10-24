@@ -16,10 +16,17 @@ define([ 'jquery', 'backbone'], function($, Backbone) {
 
         home: function () {
             this.selectMenuItem("home-menu");
-            require(["app/views/Home"], function (HomeView) {
-                var view = new HomeView();
-                view.delegateEvents();
-                view.render();
+            require(["app/models/Feed", "app/views/Home"], function (models, HomeView) {
+                var feed = new models.Feed();
+                feed.fetch({
+                    success: function (data) {
+                        var view = new HomeView({
+                            collection : data
+                        });
+                        view.delegateEvents();
+                        view.render();
+                    }
+                });
             });
         },
         whatwedo: function () {
