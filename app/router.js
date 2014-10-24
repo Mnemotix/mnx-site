@@ -16,8 +16,8 @@ define([ 'jquery', 'backbone'], function($, Backbone) {
 
         home: function () {
             this.selectMenuItem("home-menu");
-            require(["app/models/Feed", "app/views/Home"], function (models, HomeView) {
-                var feed = new models.Feed();
+            require(["app/models/Feed", "app/views/Home"], function (FeedModel, HomeView) {
+                var feed = new FeedModel();
                 feed.fetch({
                     success: function (data) {
                         var view = new HomeView({
