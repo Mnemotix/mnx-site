@@ -16,7 +16,6 @@ define([ 'jquery',
         },
         render : function() {
 
-            console.log((this.collection.toJSON()));
             var html = this.template({
                 items: this.collection.toJSON()
             });
