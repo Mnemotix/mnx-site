@@ -3,16 +3,31 @@
 <section id="hero" class="pagetop">
     <div id="owl-main" class="owl-carousel height-md owl-inner-nav owl-ui-lg">
 
+        {{#each slides}}
+        <div class="item" style="background-image: url({{bg_image}});">
+            <div class="container">
+                <div class="caption {{slide_class}}">
+
+                    <h1 class="fadeInDown-1 {{title_class}}">{{title}}</h1>
+                    <p class="fadeInDown-2 {{subtitle_class}}">{{subtitle}}</p>
+                    <div class="fadeInDown-3">
+                        <a href="{{link}}" class="btn btn-large">{{link_title}}</a>
+                    </div><!-- /.fadeIn -->
+
+                </div><!-- /.caption -->
+            </div><!-- /.container -->
+        </div><!-- /.item -->
+        {{/each}}
         <div class="item" style="background-image: url(assets/images/illustrations/slider05.svg);">
             <div class="container">
                 <div class="caption vertical-center text-center">
-                    
+
                     <h1 class="fadeInDown-1 light-color">When data make sense</h1>
                     <p class="fadeInDown-2 medium-color">Magnis modipsae que lib voloratati andigen daepeditem quiate ut reporemni aut labor. Laceaque quiae sitiorem rest non restibusaes es tumquam core posae volor remped modis volor.</p>
                     <div class="fadeInDown-3">
                         <a href="#" class="btn btn-large">Get started now</a>
                     </div><!-- /.fadeIn -->
-                    
+
                 </div><!-- /.caption -->
             </div><!-- /.container -->
         </div><!-- /.item -->
