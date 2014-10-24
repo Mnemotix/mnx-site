@@ -39,15 +39,15 @@ define([ 'jquery', 'backbone'], function($, Backbone) {
             });
         },
         // Services
-            mnxdatalab: function () {
-                this.selectMenuItem("whatwedo-menu");
-                require(["app/views/MNXdatalab"], function (MNXdatalabView) {
-                    var view = new MNXdatalabView();
-                    view.delegateEvents();
-                    view.render();
+        mnxdatalab: function () {
+            this.selectMenuItem("whatwedo-menu");
+            require(["app/views/MNXdatalab"], function (MNXdatalabView) {
+                var view = new MNXdatalabView();
+                view.delegateEvents();
+                view.render();
 
-                });
-            },
+            });
+        },
         // Solutions
         // Labs
         about: function () {
@@ -59,24 +59,24 @@ define([ 'jquery', 'backbone'], function($, Backbone) {
             });
         },
         // Ressources
-            questions: function () {
-                this.selectMenuItem("ressources-menu");
-                require(["app/views/Questions"], function (QuestionsView) {
-                    var view = new QuestionsView();
-                    view.delegateEvents();
-                    view.render();
+        questions: function () {
+            this.selectMenuItem("ressources-menu");
+            require(["app/views/Questions"], function (QuestionsView) {
+                var view = new QuestionsView();
+                view.delegateEvents();
+                view.render();
 
-                });
-            },
-            glossary: function () {
-                this.selectMenuItem("ressources-menu");
-                require(["app/views/Glossary"], function (GlossaryView) {
-                    var view = new GlossaryView();
-                    view.delegateEvents();
-                    view.render();
+            });
+        },
+        glossary: function () {
+            this.selectMenuItem("ressources-menu");
+            require(["app/views/Glossary"], function (GlossaryView) {
+                var view = new GlossaryView();
+                view.delegateEvents();
+                view.render();
 
-                });
-            },
+            });
+        },
         blog: function () {
             this.selectMenuItem("blog-menu");
             require(["app/views/Blog"], function (BlogView) {

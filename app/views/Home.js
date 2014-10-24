@@ -70,10 +70,6 @@ define([ 'jquery',
                 navigationText: ["<i class='icon-left-open-mini'></i>", "<i class='icon-right-open-mini'></i>"]
             });
 
-
-//            this.parseRSS();
-
-
             /*===================================================================================*/
             /*	ISOTOPE BLOG
              /*===================================================================================*/
@@ -111,45 +107,6 @@ define([ 'jquery',
 
             return this;
         }
-//        ,
-//        parseRSS:function(){
-//            $(".posts").empty();
-//            $.ajax({
-//                url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(config.blog.feed_url),
-//                dataType: 'json',
-//                success: function(data) {
-//                    var entries = data.responseData.feed;
-//                    $.each(entries, function(idx, item){
-////                        <div class="post format-standard">
-////
-////                            <div class="post-content">
-////
-////                                <h2 class="post-title">
-////                                    <a href="http://andersnoren.se/themes/hemingway/drink-more-coffee-developers/">Magnis modipsae que lib voloratati andigen daepeditem quiate ut repore autem labor.</a>
-////                                </h2>
-////
-////                                <ul class="meta">
-////                                    <li class="date">May 14, 2014</li>
-////                                    <li class="categories"><a href="#">Labs</a></li>
-////                                    <li class="comments"><a href="#">14</a></li>
-////                                    <li class="likes"><a href="#">30</a></li>
-////                                </ul><!-- /.meta -->
-////
-////                                <p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut repore autem labor. Laceaque quia sitiorem restem non restibusaes es modis.</p>
-////
-////                                <a href="http://andersnoren.se/themes/hemingway/drink-more-coffee-developers/" class="btn">Read more</a>
-////
-////                            </div><!-- /.post-content -->
-////
-////                        </div>
-//
-//                    });
-//                    console.log("success", data.responseData.feed);
-////                    callback(data.responseData.feed);
-//                },
-//                timeout: config.timeout
-//            });
-//        }
     });
 
 });
