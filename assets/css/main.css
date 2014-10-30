@@ -5785,3 +5785,6 @@ input:focus:-ms-input-placeholder {
 	border-bottom: 1px #eee solid;
 	}
 }
+.post.isotope-item {
+	border-radius: 5px;
+}

@@ -9,8 +9,8 @@ define([ 'jquery', 'backbone'], function($, Backbone) {
             "mnxdatalab": "mnxdatalab",         // ...
             "about"     : "about",
             "questions" : "questions",
+            "medias"    : "medias",
             "glossary"  : "glossary",
-            "blog"      : "blog", 
             "contact"   : "contact"
         },
 
@@ -68,6 +68,14 @@ define([ 'jquery', 'backbone'], function($, Backbone) {
 
             });
         },
+        medias: function () {
+            this.selectMenuItem("ressources-menu");
+            require(["app/views/Medias"], function (MediasView) {
+                var view = new MediasView();
+                view.delegateEvents();
+                view.render();
+            });
+        },
         glossary: function () {
             this.selectMenuItem("ressources-menu");
             require(["app/views/Glossary"], function (GlossaryView) {
@@ -75,14 +83,6 @@ define([ 'jquery', 'backbone'], function($, Backbone) {
                 view.delegateEvents();
                 view.render();
 
-            });
-        },
-        blog: function () {
-            this.selectMenuItem("blog-menu");
-            require(["app/views/Blog"], function (BlogView) {
-                var view = new BlogView();
-                view.delegateEvents();
-                view.render();
             });
         },
         contact: function () {
