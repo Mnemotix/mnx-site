@@ -11,7 +11,6 @@ require.config({
         underscore  : 'assets/js/libs/underscore-min',
         ocarousel   : 'assets/js/libs/owl.carousel.min',
         i18next     : 'assets/js/libs/i18next.amd-1.7.4.min',
-//      vwunits     : 'assets/js/libs/viewport-units-buggyfill',
 
         // plugins
         text        : 'assets/js/plugins/text',
@@ -51,11 +50,6 @@ require.config({
         jqueryHeadroom:{
             deps: ['jquery', 'headroom']
         }
-        /*
-        vwunits:{
-            deps: ['jquery'],
-            exports: "VUBuggyfill"
-        }*/
     }
 });
 
@@ -157,11 +151,6 @@ require(['jquery', 'backbone',
     if ($("[rel=tooltip]").length) {
         $("[rel=tooltip]").tooltip();
     }
-
-    /*===================================================================================*/
-    /*	CONVERTING iOS SAFARI VIEWPORT UNITS (BUGGY) INTO PIXELS
-     /*===================================================================================*/
-//    VUBuggyfill.init(true);
 
     // initialisation de Backbone
     window.app = new Router();
