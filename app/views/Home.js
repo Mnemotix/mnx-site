@@ -3,9 +3,11 @@ define([ 'jquery',
     'handlebars',
     'app/config',
     'text!app/templates/home.html',
+    'text!app/templates/navbar.html',
+    'text!app/templates/footer.html',
     'app/modules/carousel',
     'isotope'
-], function($, Backbone, Handlebars, config, tpl, carousel) {
+], function($, Backbone, Handlebars, config, tpl, navbarTpl, footerTpl, carousel) {
 
     "use strict";
 
@@ -13,6 +15,8 @@ define([ 'jquery',
         el : $('#page-wrapper'),
         initialize : function() {
             this.template = Handlebars.compile( tpl );
+            //Handlebars.registerPartial("navbar", navbarTpl);
+            //Handlebars.registerPartial("footer", footerTpl);
         },
         render : function() {
 
@@ -20,7 +24,7 @@ define([ 'jquery',
                 items: this.collection.toJSON()
             });
             $(this.el).html(html);
-            
+
             //ajoute un effet à l'affichage de la page
             $('main [class*="col-"]').addClass("animated fadeInUp");
             // remonte la page

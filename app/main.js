@@ -10,11 +10,13 @@ require.config({
         jquery      : 'assets/js/libs/jquery-2.1.1.min',
         underscore  : 'assets/js/libs/underscore-min',
         ocarousel   : 'assets/js/libs/owl.carousel.min',
+        i18next     : 'assets/js/libs/i18next.amd-1.7.4.min',
 //      vwunits     : 'assets/js/libs/viewport-units-buggyfill',
 
         // plugins
         text        : 'assets/js/plugins/text',
-        headroom    : 'assets/js/plugins/headroom.js.min',
+        headroom    : 'assets/js/plugins/headroom.min',
+        jqueryHeadroom   : 'assets/js/plugins/jQuery.headroom.min',
         easing      : 'assets/js/plugins/jquery.easing.1.3.min',
         scrollUp    : 'assets/js/plugins/jquery.scrollUp',
         dropdown    : 'assets/js/plugins/bootstrap-hover-dropdown.min',
@@ -46,6 +48,9 @@ require.config({
         scrollUp:{
             deps: ['jquery']
         },
+        jqueryHeadroom:{
+            deps: ['jquery', 'headroom']
+        }
         /*
         vwunits:{
             deps: ['jquery'],
@@ -56,21 +61,37 @@ require.config({
 
 require(['jquery', 'backbone',
     'app/router',
-//  'vwunits',
-    'headroom',
+    'i18next',
     'easing',
     'bootstrap',
     'dropdown',
-    'scrollUp'
-], function ($, Backbone, Router, headroom) {
+    'scrollUp',
+    'app/helpers',
+    'jqueryHeadroom'
+], function ($, Backbone, Router, i18n) {
+
+    window.lang = navigator.language || navigator.userLanguage;
+    /*===================================================================================*/
+    /*  i18next initialization
+     /*===================================================================================*/
+    i18n.init({
+        lng: window.lang,      //Get the browser or device language
+        resGetPath: 'app/locales/__lng__/__ns__.json',
+        fallbackLng: 'en'                                    //Pass the initialization language, set the translation files path and fallback language
+    });
+
+
 
     /*===================================================================================*/
     /*  HEADER EFFECTS
      /*===================================================================================*/
-    var myElement = document.querySelector("header");
-    var headroom  = new Headroom(myElement, {"offset": 320,"tolerance": 10});
-    headroom.init(); 
-
+    //var myElement = document.querySelector("header");
+    //console.log(myElement);
+    //var headroom  = new Headroom(myElement, {"offset": 320,"tolerance": 10});
+    //console.log(headroom);
+    //headroom.init();
+    //
+    $("header").headroom();
     /*===================================================================================*/
     /*	DROPDOWN ON HOVER (NAVIGATION)
      /*===================================================================================*/

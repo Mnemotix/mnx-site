@@ -1,10 +1,10 @@
-define([ 'jquery', 'backbone'], function($, Backbone) {
+define([ 'jquery', 'backbone', 'i18next'], function($, Backbone, i18n) {
 
     "use strict";
 
     return Backbone.Router.extend({
         routes: {
-            ""          : "home",               // correspond à une requête index.html sans rien ou juste avec un #
+            "(lang/:lang)" : "home",               // correspond à une requête index.html sans rien ou juste avec un #
             "whatwedo"  : "whatwedo",           // correspond à une requête index.html#about
             "mnxdatalab": "mnxdatalab",         // ...
             "about"     : "about",
@@ -16,8 +16,11 @@ define([ 'jquery', 'backbone'], function($, Backbone) {
             "credits"   : "credits",
             "press"     : "press"
         },
-
-        home: function () {
+        home: function (lang) {
+            if(lang) {
+                window.lang = lang;
+                i18n.init({ lng: window.lang });
+            }
             this.selectMenuItem("home-menu");
             require(["app/models/Feed", "app/views/Home"], function (FeedModel, HomeView) {
                 var feed = new FeedModel();
@@ -117,9 +120,6 @@ define([ 'jquery', 'backbone'], function($, Backbone) {
                 view.render();
             });
         },
-
-
-
 
         selectMenuItem : function(itemClass){
             $('.nav li').removeClass('active'); // reset all

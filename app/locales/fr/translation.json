@@ -1,0 +1,28 @@
+{
+  "home": {
+    "title" : "MNEMOTIX",
+    "slides" : {
+      "link" : "En savoir plus",
+      "slide1": {
+        "title" : "Quand les données font sens.",
+        "description" : "Magnis modipsae que lib voloratati andigen daepeditem quiate ut reporemni aut labor. Laceaque quiae sitiorem rest non restibusaes es tumquam core posae volor remped modis volor."
+      },
+      "slide2": {
+        "title" : "",
+        "description" : ""
+      },
+      "slide3": {
+        "title" : "",
+        "description" : ""
+      },
+      "slide4": {
+        "title" : "",
+        "description" : ""
+      },
+      "slide5": {
+        "title" : "",
+        "description" : ""
+      }
+    }
+  }
+}
