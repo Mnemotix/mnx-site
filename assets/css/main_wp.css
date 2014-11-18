@@ -79,7 +79,7 @@ h4,
 h5,
 h6 {
     font-family: 'Lato', sans-serif !important;
-    font-weight: 700 !important;
+    font-weight: 700;
 	letter-spacing: 0.025em !important;
     color: #506A85;
     margin-top: 0;
@@ -1696,6 +1696,7 @@ p .btn {
 /*===================================================================================*/
 
 
+/*  NAV  */
 .navbar img {
     vertical-align: middle;
 }
@@ -1709,7 +1710,7 @@ p .btn {
 	box-shadow: 0 1px 3px rgba( 0, 0, 0, 0.5 );
 }
 .pagetop {
-	padding-top: 50px;
+	padding-top: 47px;
 }
 .pagebottom {
 	padding-bottom: 75px;
@@ -1737,11 +1738,11 @@ p .btn {
     		transform: translateY(0%);
 }
 .headroom--unpinned .navbar {
-    -webkit-transform: translateY(-100%);
-       -moz-transform: translateY(-100%);
-        -ms-transform: translateY(-100%);
-         -o-transform: translateY(-100%);
-    		transform: translateY(-100%);
+    -webkit-transform: translateY(-101%);
+       -moz-transform: translateY(-101%);
+        -ms-transform: translateY(-101%);
+         -o-transform: translateY(-101%);
+    		transform: translateY(-101%);
 }
 
 
@@ -1778,13 +1779,88 @@ p .btn {
 	-webkit-animation-duration: .8s !important;
 	animation-duration: .8s !important;
 }
+i.icon-s-twitter{
+	color: #55acee;
+}
+@media (max-width: 991px) {
+  .visible-md-block {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) {
+  .visible-xs-block {
+    display: none !important;
+  }
+}
 
-@media (max-width: 768px) {
+
+/*  HERO  */
+
+#hero h1 {
+	font-size: 78px;
+	line-height: 110%;
+	font-weight: 900;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	-webkit-transition: font 200ms ease-out;
+	   -moz-transition: font 200ms ease-out;
+		 -o-transition: font 200ms ease-out;
+			transition: font 200ms ease-out;
+}
+#hero h4 {
+	font-size: 33px;
+	line-height: 120%;
+}
+#hero p {
+	font-size: 24px;
+	line-height: 150%;
+	font-weight: 400;
+	letter-spacing: .015em;
+	text-transform: none;
+	margin-top: 20px;
+	margin-bottom: 0;
+	-webkit-transition: font 200ms ease-out, margin 200ms ease-out;
+	   -moz-transition: font 200ms ease-out, margin 200ms ease-out;
+		 -o-transition: font 200ms ease-out, margin 200ms ease-out;
+			transition: font 200ms ease-out, margin 200ms ease-out;
+}
+
+@media (max-width: 767px) {
 	#services .tab-pane {
-	opacity: 1;
-	display: block !important;
-	margin-bottom: 50px;
-	padding-bottom: 50px;
-	border-bottom: 1px #eee solid;
+		opacity: 1;
+		display: block !important;
+		margin-bottom: 50px;
+		padding-bottom: 50px;
+		border-bottom: 1px #eee solid;
+		}
+	#scrollUp {
+		display: none !important;;
+	}
+	
+	#hero h1 {
+		font-size: 38px;
+		line-height: 115%;
+		letter-spacing: 0.031em;
+	}
+	
+	#hero p {
+		font-size: 20px;
+		line-height: 135%;
+		margin-top: 15px;
+	}
+}
+
+@media (min-width: 768px) and (max-height: 1024px) {
+	
+	#hero h1 {
+		font-size: 60px;
+		line-height: 115%;
+	}
+	
+	#hero p {
+		font-size: 22px;
+		line-height: 135%;
+		margin-top: 17px;
 	}
 }

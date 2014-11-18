@@ -11,7 +11,10 @@ define([ 'jquery', 'backbone'], function($, Backbone) {
             "questions" : "questions",
             "medias"    : "medias",
             "glossary"  : "glossary",
-            "contact"   : "contact"
+            "contact"   : "contact",
+            "legal"     : "legal",
+            "credits"   : "credits",
+            "press"     : "press"
         },
 
         home: function () {
@@ -93,6 +96,30 @@ define([ 'jquery', 'backbone'], function($, Backbone) {
                 view.render();
             });
         },
+        credits: function () {
+            require(["app/views/Credits"], function (CreditsView) {
+                var view = new CreditsView();
+                view.delegateEvents();
+                view.render();
+            });
+        },
+        legal: function () {
+            require(["app/views/Legal"], function (LegalView) {
+                var view = new LegalView();
+                view.delegateEvents();
+                view.render();
+            });
+        },
+        press: function () {
+            require(["app/views/Press"], function (PressView) {
+                var view = new PressView();
+                view.delegateEvents();
+                view.render();
+            });
+        },
+
+
+
 
         selectMenuItem : function(itemClass){
             $('.nav li').removeClass('active'); // reset all

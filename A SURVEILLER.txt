@@ -1,5 +1,0 @@
-le comportement des carousels avec iOS7.
-
-possible pb à cause des "vh" dans main.css et le retrait de
-
-assets/js/libs/viewport-units-buggyfill
