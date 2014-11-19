@@ -29,5 +29,10 @@
       "p" : "En français : Magnis modipsae que voloratati andigen daepeditem quiate conecus aut labore. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam explabo.",
       "btn" : "Voir nos démos"
     }
+  },
+  "contact": {
+    "hero" : {
+      "h1" : "Contactez-nous"
+    }
   }
 }
