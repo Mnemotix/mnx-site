@@ -32,7 +32,32 @@
   },
   "contact": {
     "hero" : {
-      "h1" : "Contactez-nous"
+      "h1" : "Contactez-nous",
+      "p" : "Si vous voulez d'autres infos bla bla bla."
+    },
+    "h2" : "Laissez-nous un message",
+    "p" : "En français, magnis modipsae que lib voloratati andigen daepeditem quiate ut reporemni autem labor. Laceaque quiae sitiorem rest non restibusae es tumquam core posae volor remped modi volor. Doloreiur qui commolu temp dolupta oreprem tibusam. Eumenis consent accullignis autem inisita posae volor conecus resto explabo.",
+    "form" : {
+      "name" : "Nom (Obligatoire)",
+      "email" : "Email (Obligatoire)",
+      "subject" : "Sujet",
+      "message" : "Message ...",
+      "btn" : "Envoyer"
+    },
+    "team" : {
+      "title" : "Notre équipe",
+      "nico" :  {
+      "name" : "Nicolas Delaforge",
+      "function" : "CEO"
+      },
+      "mylene" :  {
+      "name" : "Mylène Leitzelman",
+      "function" : "Data scientist"
+      },
+      "alain" :  {
+      "name" : "Alain Giaccone ",
+      "function" : "Data scientist"
+      }
     }
   }
 }

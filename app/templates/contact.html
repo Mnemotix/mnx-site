@@ -7,7 +7,7 @@
 			<div class="col-md-8 inner-right inner-bottom-xs">
 				<header>
 					<h1>{{t "contact.hero.h1"}}</h1>
-					<p>Do you want to know more? We’d love to hear from you!</p>
+					<p>{{t "contact.hero.p"}}</p>
 				</header>
 			</div><!-- /.col -->
 			
@@ -17,6 +17,7 @@
 					<li><i class="icon-location contact"></i> 318 avenue de la Carraire, 06210 Mandelieu - FRANCE</li>
 					<li><i class="icon-mobile contact"></i> +33 6 16 22 71 18</li>
 					<li><a href="mailto:contact@mnemotix.com"><i class="icon-mail-1 contact"></i> contact@mnemotix.com</a></li>
+					<li><a href="https://twitter.com/mnemotix" target="blank"><i class="icon-s-twitter contact"></i> @mnemotix.com</a></li>
 				</ul><!-- /.contacts -->
 			</div><!-- /.col -->
 			
@@ -30,9 +31,9 @@
 	<div class="row">
 		
 		<div class="col-md-8 inner-right inner-bottom-xs">
-			<h2>Leave a Message</h2>
+			<h2>{{t "contact.h2"}}</h2>
 			
-			<p class="inner-bottom-xs">Magnis modipsae que lib voloratati andigen daepeditem quiate ut reporemni autem labor. Laceaque quiae sitiorem rest non restibusae es tumquam core posae volor remped modi volor. Doloreiur qui commolu temp dolupta oreprem tibusam. Eumenis consent accullignis autem inisita posae volor conecus resto explabo.</p>
+			<p class="inner-bottom-xs">{{t "contact.p"}}</p>
 			
 			<!-- ============================================================= SECTION – CONTACT FORM ============================================================= -->
 			
@@ -42,29 +43,29 @@
 					
 					<div class="row">
 						<div class="col-sm-6">
-							<input type="text" name="name" class="form-control" placeholder="Name (Required)" required>
+							<input type="text" name="name" class="form-control" placeholder="{{t "contact.form.name"}}" required>
 						</div><!-- /.col -->
 					</div><!-- /.row -->
 					
 					<div class="row">
 						<div class="col-sm-6">
-							<input type="email" name="email" class="form-control" placeholder="Email (Required)" required>
+							<input type="email" name="email" class="form-control" placeholder="{{t "contact.form.email"}}" required>
 						</div><!-- /.col -->
 					</div><!-- /.row -->
 					
 					<div class="row">
 						<div class="col-sm-6">
-							<input type="text" name="subject" class="form-control" placeholder="Subject">
+							<input type="text" name="subject" class="form-control" placeholder="{{t "contact.form.subject"}}">
 						</div><!-- /.col -->
 					</div><!-- /.row -->
 					
 					<div class="row">
 						<div class="col-sm-12">
-							<textarea name="message" class="form-control" placeholder="Enter your message ..."></textarea>
+							<textarea name="message" class="form-control" placeholder="{{t "contact.form.message"}}"></textarea>
 						</div><!-- /.col -->
 					</div><!-- /.row -->
 					
-					<button type="submit" class="btn btn-default btn-submit">Submit message</button>
+					<button type="submit" class="btn btn-default btn-submit">{{t "contact.form.btn"}}</button>
 					
 				</form>
 				
@@ -82,7 +83,7 @@
 			
 			<section id="contact-names" class="light-bg inner-xs inner-left-xs inner-right-xs">
 					
-				<h3 class="team-headline sidelines text-center"><span>Contact names</span></h3>
+				<h3 class="team-headline sidelines text-center"><span>{{t "contact.team.title"}}</span></h3>
 				
 				<div class="row thumbs gap-md text-center">
 					
@@ -107,8 +108,8 @@
 							
 							<figcaption class="member-details bordered no-top-border">
 								<h3>
-									Nicolas Delaforge 
-									<span>CEO</span>
+									{{t "contact.team.nico.name"}}
+									<span>{{t "contact.team.nico.function"}}</span>
 								</h3>
 							</figcaption>
 							
@@ -136,8 +137,8 @@
 							
 							<figcaption class="member-details bordered no-top-border">
 								<h3>
-									Mylène Leitzelman
-									<span>Data scientist</span>
+									{{t "contact.team.mylene.name"}}
+									<span>{{t "contact.team.mylene.function"}}</span>
 								</h3>
 							</figcaption>
 							
@@ -169,8 +170,8 @@
 							
 							<figcaption class="member-details bordered no-top-border">
 								<h3>
-									Alain Giaccone 
-									<span>Data scientist</span>
+									{{t "contact.team.alain.name"}}
+									<span>{{t "contact.team.alain.function"}}</span>
 								</h3>
 							</figcaption>
 							

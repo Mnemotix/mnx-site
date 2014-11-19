@@ -5775,7 +5775,7 @@ input:focus:-ms-input-placeholder {
 	-webkit-animation-duration: .8s !important;
 	animation-duration: .8s !important;
 }
-i.icon-s-twitter {
+.navbar i.icon-s-twitter {
 	color: #55acee;
 }
 
