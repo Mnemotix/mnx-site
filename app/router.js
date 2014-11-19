@@ -5,17 +5,17 @@ define([ 'jquery', 'backbone', 'i18next'], function($, Backbone, i18n) {
     return Backbone.Router.extend({
         routes: {
             "(lang/:lang)" : "home",               // correspond à une requête index.html sans rien ou juste avec un #
-            "whatwedo"  : "whatwedo",           // correspond à une requête index.html#about
-            "mnxdatalab": "mnxdatalab",         // ...
+            "work"      : "work",           // correspond à une requête index.html#about
+                "mnxdatalab": "mnxdatalab",         // ...
             "about"     : "about",
             "questions" : "questions",
-            "medias"    : "medias",
             "glossary"  : "glossary",
             "contact"   : "contact",
             "legal"     : "legal",
             "credits"   : "credits",
             "press"     : "press"
         },
+
         home: function (lang) {
             if(lang) {
                 window.lang = lang;
@@ -35,27 +35,29 @@ define([ 'jquery', 'backbone', 'i18next'], function($, Backbone, i18n) {
                 });
             });
         },
-        whatwedo: function () {
-            this.selectMenuItem("whatwedo-menu");
-            require(["app/views/Whatwedo"], function (WhatwedoView) {
-                var view = new WhatwedoView();
+
+        work: function () {
+            this.selectMenuItem("work-menu");
+            require(["app/views/Work"], function (WorkView) {
+                var view = new WorkView();
                 view.delegateEvents();
                 view.render();
 
             });
         },
-        // Services
-        mnxdatalab: function () {
-            this.selectMenuItem("whatwedo-menu");
-            require(["app/views/MNXdatalab"], function (MNXdatalabView) {
-                var view = new MNXdatalabView();
-                view.delegateEvents();
-                view.render();
+            // Services
+            mnxdatalab: function () {
+                this.selectMenuItem("work-menu");
+                require(["app/views/MNXdatalab"], function (MNXdatalabView) {
+                    var view = new MNXdatalabView();
+                    view.delegateEvents();
+                    view.render();
 
-            });
-        },
-        // Solutions
-        // Labs
+                });
+            },
+            // Solutions
+            // Labs
+
         about: function () {
             this.selectMenuItem("about-menu");
             require(["app/views/About"], function (AboutView) {
@@ -64,6 +66,7 @@ define([ 'jquery', 'backbone', 'i18next'], function($, Backbone, i18n) {
                 view.render();
             });
         },
+
         // Ressources
         questions: function () {
             this.selectMenuItem("ressources-menu");
@@ -72,14 +75,6 @@ define([ 'jquery', 'backbone', 'i18next'], function($, Backbone, i18n) {
                 view.delegateEvents();
                 view.render();
 
-            });
-        },
-        medias: function () {
-            this.selectMenuItem("ressources-menu");
-            require(["app/views/Medias"], function (MediasView) {
-                var view = new MediasView();
-                view.delegateEvents();
-                view.render();
             });
         },
         glossary: function () {
@@ -91,6 +86,7 @@ define([ 'jquery', 'backbone', 'i18next'], function($, Backbone, i18n) {
 
             });
         },
+
         contact: function () {
             this.selectMenuItem("contact-menu");
             require(["app/views/Contact"], function (ContactView) {
@@ -99,16 +95,17 @@ define([ 'jquery', 'backbone', 'i18next'], function($, Backbone, i18n) {
                 view.render();
             });
         },
-        credits: function () {
-            require(["app/views/Credits"], function (CreditsView) {
-                var view = new CreditsView();
+        
+        legal: function () {
+            require(["app/views/Legal"], function (LegalView) {
+                var view = new LegalView();
                 view.delegateEvents();
                 view.render();
             });
         },
-        legal: function () {
-            require(["app/views/Legal"], function (LegalView) {
-                var view = new LegalView();
+        credits: function () {
+            require(["app/views/Credits"], function (CreditsView) {
+                var view = new CreditsView();
                 view.delegateEvents();
                 view.render();
             });

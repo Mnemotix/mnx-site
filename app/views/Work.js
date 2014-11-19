@@ -1,7 +1,7 @@
 define([ 'jquery',
     'backbone',
     'handlebars',
-    'text!app/templates/whatwedo.html',
+    'text!app/templates/work.html',
     'ocarousel'
 ], function($, Backbone, Handlebars, tpl) {
 
@@ -13,7 +13,7 @@ define([ 'jquery',
             this.template = Handlebars.compile( tpl );
         },
         render : function() {
-            var html = this.template({ title : "Whatwedo"});
+            var html = this.template({ title : "Work"});
             $(this.el).html(html);
             
             //ajoute un effet à l'affichage de la page
