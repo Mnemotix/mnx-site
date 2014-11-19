@@ -23,6 +23,11 @@
         "title" : "",
         "description" : ""
       }
+    },
+    "demos" : {
+      "h1" : "Voir nos démos ?",
+      "p" : "En français : Magnis modipsae que voloratati andigen daepeditem quiate conecus aut labore. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam explabo.",
+      "btn" : "Voir nos démos"
     }
   }
 }

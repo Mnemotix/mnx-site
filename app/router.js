@@ -88,6 +88,10 @@ define([ 'jquery', 'backbone', 'i18next'], function($, Backbone, i18n) {
         },
 
         contact: function () {
+            if(lang) {
+                window.lang = lang;
+                i18n.init({ lng: window.lang });
+            }
             this.selectMenuItem("contact-menu");
             require(["app/views/Contact"], function (ContactView) {
                 var view = new ContactView();
