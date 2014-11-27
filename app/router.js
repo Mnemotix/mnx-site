@@ -4,9 +4,16 @@ define([ 'jquery', 'backbone', 'i18next'], function($, Backbone, i18n) {
 
     return Backbone.Router.extend({
         routes: {
-            "(lang/:lang)" : "home",               // correspond à une requête index.html sans rien ou juste avec un #
-            "work"      : "work",           // correspond à une requête index.html#about
-                "mnxdatalab": "mnxdatalab",         // ...
+            "(lang/:lang)" : "home",                    // correspond à une requête index.html sans rien ou juste avec un #
+            "work"      : "work",                       // correspond à une requête index.html#about
+                "mnxstarter"    :  "mnxstarter",      // services ...
+                "mnxbooster"    :  "mnxbooster",
+                "mnxconsulting" :  "mnxconsulting",
+                "mnxtraining"   :  "mnxtraining",
+                "mnxserver"     :  "mnxserver",
+                "mnxwebmarks"   :  "mnxwebmarks",
+                "naturopedia":  "naturopedia",
+                "cordis"     :  "cordis",
             "about"     : "about",
             "questions" : "questions",
             "glossary"  : "glossary",
@@ -45,18 +52,83 @@ define([ 'jquery', 'backbone', 'i18next'], function($, Backbone, i18n) {
 
             });
         },
+
             // Services
-            mnxdatalab: function () {
+            mnxstarter: function () {
                 this.selectMenuItem("work-menu");
-                require(["app/views/MNXdatalab"], function (MNXdatalabView) {
-                    var view = new MNXdatalabView();
+                require(["app/views/MNXstarter"], function (MNXstarterView) {
+                    var view = new MNXstarterView();
+                    view.delegateEvents();
+                    view.render();
+
+                });
+            },
+            mnxbooster: function () {
+                this.selectMenuItem("work-menu");
+                require(["app/views/MNXbooster"], function (MNXboosterView) {
+                    var view = new MNXboosterView();
+                    view.delegateEvents();
+                    view.render();
+
+                });
+            },
+            mnxconsulting: function () {
+                this.selectMenuItem("work-menu");
+                require(["app/views/MNXconsulting"], function (MNXconsultingView) {
+                    var view = new MNXconsultingView();
+                    view.delegateEvents();
+                    view.render();
+
+                });
+            },
+            mnxtraining: function () {
+                this.selectMenuItem("work-menu");
+                require(["app/views/MNXtraining"], function (MNXtrainingView) {
+                    var view = new MNXtrainingView();
                     view.delegateEvents();
                     view.render();
 
                 });
             },
             // Solutions
+            mnxserver: function () {
+                this.selectMenuItem("work-menu");
+                require(["app/views/MNXserver"], function (MNXserverView) {
+                    var view = new MNXserverView();
+                    view.delegateEvents();
+                    view.render();
+
+                });
+            },
+            mnxwebmarks: function () {
+                this.selectMenuItem("work-menu");
+                require(["app/views/MNXwebmarks"], function (MNXwebmarksView) {
+                    var view = new MNXwebmarksView();
+                    view.delegateEvents();
+                    view.render();
+
+                });
+            },
             // Labs
+            naturopedia: function () {
+                this.selectMenuItem("work-menu");
+                require(["app/views/LABnaturopedia"], function (LABnaturopediaView) {
+                    var view = new LABnaturopediaView();
+                    view.delegateEvents();
+                    view.render();
+
+                });
+            },
+            cordis: function () {
+                this.selectMenuItem("work-menu");
+                require(["app/views/LABcordis"], function (LABcordisView) {
+                    var view = new LABcordisView();
+                    view.delegateEvents();
+                    view.render();
+
+                });
+            },
+
 
         about: function () {
             this.selectMenuItem("about-menu");
@@ -101,6 +173,7 @@ define([ 'jquery', 'backbone', 'i18next'], function($, Backbone, i18n) {
         },
         
         legal: function () {
+            this.selectMenuItem("");
             require(["app/views/Legal"], function (LegalView) {
                 var view = new LegalView();
                 view.delegateEvents();
@@ -108,6 +181,7 @@ define([ 'jquery', 'backbone', 'i18next'], function($, Backbone, i18n) {
             });
         },
         credits: function () {
+            this.selectMenuItem("");
             require(["app/views/Credits"], function (CreditsView) {
                 var view = new CreditsView();
                 view.delegateEvents();
@@ -115,6 +189,7 @@ define([ 'jquery', 'backbone', 'i18next'], function($, Backbone, i18n) {
             });
         },
         press: function () {
+            this.selectMenuItem("");
             require(["app/views/Press"], function (PressView) {
                 var view = new PressView();
                 view.delegateEvents();

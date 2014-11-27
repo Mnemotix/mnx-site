@@ -5794,11 +5794,17 @@ input:focus:-ms-input-placeholder {
 .post.isotope-item {
 	border-radius: 5px;
 }
+#about header h1 {
+	margin-bottom: 0;
+	font-weight: 800;
+}
 #about header h2 {
-	font-size: 38px;
+	font-size: 36px;
 }
 
-
+.sidenav .active {
+	background: #d7e1ea;
+}
 
 footer {
 	font-size: 15px;

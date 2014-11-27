@@ -1,39 +1,229 @@
 {
   "home": {
+
     "title" : "MNEMOTIX",
+
     "slides" : {
       "link" : "En savoir plus",
-      "slide1": {
-        "title" : "Quand les données font sens.",
-        "description" : "Magnis modipsae que lib voloratati andigen daepeditem quiate ut reporemni aut labor. Laceaque quiae sitiorem rest non restibusaes es tumquam core posae volor remped modis volor."
+      "1": {
+        "title" : "Gardez le cap dans l'océan des données",
+        "description" : "Avec un bagage de 15 ans de recherche, nous vous guidons dans votre démarche de valorisation des connaissances"
       },
-      "slide2": {
-        "title" : "",
-        "description" : ""
+      "2": {
+        "title" : "Embarquez une sémantique légère dans votre système d'information",
+        "description" : "Nous vous accompagnons dans la conception de vos architectures Web 3.0"
       },
-      "slide3": {
-        "title" : "",
-        "description" : ""
+      "3": {
+        "title" : "L'Homme est la mesure de toute donnée",
+        "description" : "Les ressources parcourrues sur le web sont un lien entre les personnes que nous révélons pour vous éclairer"
       },
-      "slide4": {
-        "title" : "",
-        "description" : ""
+      "4": {
+        "title" : "Explorer la richesse de votre communauté",
+        "description" : "nous vous outillons pour vous aider à monitorer votre communauté"
       },
-      "slide5": {
-        "title" : "",
+      "5": {
+        "title" : "Votre savoir n'est pas une île isolée",
+        "description" : "Nous structurons et décloisonnons vos données pour les porter à la connaissance du monde"
+      }
+    },
+
+    "arguments" : {
+      "link" : "En savoir plus",
+      "1": {
+        "title" : "Donnez un coup d'accélérateur à votre savoir",
+        "description" : "Vous réflechissez à comment mettre vos connaissances à la portée de tous sur le Web ? Mnemotix vous propose des solutions sur mesure pour structurer et décloisonner vos données et vous accompagne dans la conception de vos architectures Web 3.0."
+      },
+      "2": {
+        "title" : "Donnez un second souffle à votre communauté",
+        "description" : "Dans votre activité quotidienne de gestion et d’animation de communauté, vous voulez savoir où sont les communautés invisibles, si il y a des groupes d’intérêts particuliers?, quelles sont des tendances dans les échanges? comment inciter les membres à partager, à s’engager ? comment mesurer l’impact d'une information sur un groupe ? Mnémotix a des solutions."
+      },
+      "3": {
+        "title" : "Intégrez les technologies de demain dans vos solutions",
+        "description" : "Mnemotix est agréé par le Ministère de l'enseignement supérieur et de la recherche pour mener des actions de R&D et d'innovation pour le compte de tiers. Nous vous accompagnons pour monter un dossier BPI, déposer un projet ANR etc..."
+      }
+    },
+
+    "demos" : {
+      "title" : "Démos",
+      "description" : "Vous souhaitez en savoir plus sur notre savoir faire technologique ?",
+      "link" : "Voir nos démos"
+    },
+
+    "news" : {
+      "title" : "Actualités",
+      "description" : "Nos dernières news, bla bla bla"
+    },
+
+    "clients" : {
+      "title" : "Nos cas Client",
+      "description" : "Nous entretenons avec nos clients une relation de confiance et pérenne en les accompagnant tout au long du processus de valorisation de leurs données. Ils nous ont fait confiance :"
+    }
+
+  },
+
+
+
+
+  "footer" : {
+
+    "col1" : {
+      "title" : "Qui sommes-nous",
+      "description" : "Mnémotix est une Smartup coopérative, créée en janvier 2013 à l'issu d'un projet de recherche porté par l’INRIA de Sophia Antipolis, spécialisée dans l’ingénierie documentaire et du web sémantique.",
+      "link" : "En savoir plus"
+     },
+    
+    "col2" : {
+      "title1" : "Services",
+      "title2" : "Soutions"
+     },
+    
+    "col3" : {
+      "title" : "Ressources"
+     },
+
+    "col4" : {
+      "title" : "Actualités",
+      "description" : "",
+      "lang" : "Changer la langue"
+     },
+
+    "home" : "Accueil",
+    "contact" : "Contact",
+    "copyright" : "2014 MNEMOTIX. Tous droits réservés."
+  },
+
+
+
+
+  "work": {
+
+    "hero" : {
+      "title" : "Notre Cap : vous aider à créer des webs de contenus pertinents",
+      "description" : "Nous développons et commercialisons une gamme de <b>services outillés</b> pour vous proposer des solutions concrètes à vos problèmes de structuration de fonds documentaires, d’animation communautaire et d’<b>d’intelligence collective</b> par l’analyse et la valorisation de données métiers."
+    },
+
+    "services" : {
+      "title" : "Nos services outillés",
+      "description" : "Nous nous adaptons à tous les niveaux d’exigence et de budget pour vous accompagner dans votre projet de valorisation de connaissances qu’elles soient issues du Web, de bases métiers ou de plates-formes communautaires.",
+      "link" : "Plus de détails",
+      "1": {
+        "title" : "MNX Starter",
+        "description" : "Vous cherchez une solution abordable, légère et clé en main pour analyser et valoriser vos données métiers ? MNX Starter est un service modulable idéal pour découvrir le potentiel immense du web sémantique appliqué à vos données."
+      },
+      "2": {
+        "title" : "MNX Booster",
+        "description" : "Vous souhaitez passer le cap du web de demain à votre système d'information ? MNX Booster est notre service de développement et d'intégration de briques technologiques à façon pour enrichir votre solution."
+      },
+      "3": {
+        "title" : "MNX Consulting",
+        "description" : "Nous proposons notre expertise en accompagnement technique (AMO), ingénierie logicielle et mise en production de projets innovants."
+      },
+      "4": {
+        "title" : "MNX Training",
         "description" : ""
       }
     },
-    "demos" : {
-      "h1" : "Voir nos démos ?",
-      "p" : "En français : Magnis modipsae que voloratati andigen daepeditem quiate conecus aut labore. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam explabo.",
-      "btn" : "Voir nos démos"
+
+    "solutions" : {
+      "title" : "Coeur technologique",
+      "description" : "Depuis sa création, Mnémotix capitalise le fruit de ses développements R&D dans son <b>Mnémokit</b>, une bibliothèque logicielle destinée à faciliter la collecte, l’analyse ou la visualisation de données.",
+      "link" : "Plus de détails",
+      "1": {
+        "title" : "MNX Server",
+        "description" : "MNX Server est un middleware sémantique assemblant les briques du Mnémokit en une chaîne de traitement extensible et personnalisable. Il fédére et enrichit les applications d’entreprises existantes en leur conférant de nouvelles capacités d’analyse pour une meilleure gestion des compétences ou des communautés."
+      },
+      "2": {
+        "title" : "MNX Webmarks",
+        "description" : "Webmarks est une solution de veille collaborative basée sur un principe de bookmarking et de curation sémantique qui révèle et dynamise les interactions dans une communauté d'intérêts en ligne."
+      }
+    },
+
+    "labs" : {
+      "title" : "MNX Labs",
+      "description" : "L’équipe Mnémotix s’est forgée une solide expérience auprès des meilleures équipes de recherche françaises dans les sciences du web.Nous veillons à préserver ce lien historique en établissant des partenariats avec les grands laboratoires (CNRS, UTC, etc.), en participant activement à des projets de recherche nationaux ou européens (ANR, FUI, H2020), aux manifestations scientifiques et en tissant un réseau de collaboration de plus en plus vaste, en France mais aussi en Europe et dans le monde."
+    },
+
+    "touch" : {
+      "title" : "Nos services vous intéressent ?",
+      "link" : "Contactez-nous"
     }
+
   },
-  "contact": {
+
+
+
+
+  "about": {
+
     "hero" : {
-      "h1" : "Contactez-nous",
-      "p" : "Si vous voulez d'autres infos bla bla bla."
+      "title" : "MNÉMOTIX,",
+      "description" : "une smartup coopérative ancrée dans l’innovation et la recherche."
+    },
+
+    "who" : {
+      "1": {
+        "title" : "Une nouvelle génération d’entreprise informatique",
+        "description" : "Nous souhaitons avant tout à valoriser notre savoir-faire et nos compétences, plutôt que la technologie, dans une structure pérenne et participative. C’est pourquoi, nous avons choisi le statut de SCIC pour mener à bien ses objectifs.<br><br>Grâce à cette forme d’entreprise high-tech ancrée dans l’Economie Sociale et Solidaire, nous privilégions l’établissement de partenariats durables et solides avec d’autres entreprises, des institutions ou des collectivités territoriales pour avancer dans le développement de nos briques logicielles."
+      },
+      "2": {
+        "title" : "Enracinés dans la recherche publique",
+        "description" : "Notre équipe est très majoritairement issue de la recherche publique française (INRIA). Chaque jour, nous veillons à préserver ce lien historique en établissant des partenariats avec les grands laboratoires (CNRS, UTC, etc.), en participant activement à des projets de recherche nationaux ou européens, aux manifestations scientifiques et en tissant un réseau de collaboration de plus en plus vaste, en France mais aussi en Europe et dans le monde.<br><br>Cette caractéristique permet à nos clients de bénéficier d’une expertise sans cesse renouvelée et des dernières technologies du domaine."
+      }
+    },
+
+    "motivations" : {
+      "title" : "Nos motivations",
+      "description" : "Nous croyons au fort potentiel du web sémantique pour favoriser la création de \"web de connaissances\", décloisonner les savoir et offrir au plus grand nombre l'accès libre et transparent à ces données.",
+      "1": {
+        "title" : "Esprit coopératif",
+        "description" : "Nous tenons avant tout à valoriser notre savoir-faire et nos compétences, plutôt que notre technologie, dans une structure pérenne et participative. C’est pourquoi, nous avons choisi le statut de Société coopérative d’intérêt collectif (SCIC) pour mener à bien le projet Mnemotix."
+      },
+      "2": {
+        "title" : "Transfert d'Innovation",
+        "description" : "Nous intègrons dans nos solutions des briques logicielles open-source directement issues des travaux de la recherche de nos partenaires. Nous contribuons activement au code de certaines briques logicielles comme Corese/Kgram ou Gephi. Grâce à cette approche, nos clients bénéficient des dernières innovations technologiques, leur procurant un avantage concurrentiel non négligeable."
+      },
+      "3": {
+        "title" : "Transition",
+        "description" : "Parce que nous sommes convaincus du rôle de facilitation des nouvelles technologies et du Web dans le processus de changement de notre société et de nos modes de consommation, nous nous engageons aux côtés des acteurs de(s) transition(s), énergétique, sociale et écologique, afin de les assister dans l’organisation de leurs communautés."
+      }
+    },
+
+    "quotes" : {
+      "title" : "Ce que nos clients et partenaires disent de nous"
+    },
+
+    "press" : {
+      "title" : "En savoir plus ...",
+      "description" : "Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.",
+      "link" : "Espace presse"
+    },
+
+    "career" : {
+      "title" : "S'engager avec Mnémotix",
+      "description" : "Vous êtes porteur d'un projet dans le domaine du web sémantique et vous souhaitez nous rejoindre ? Vous avez des compétences que vous souhaiteriez valoriser dans une structure coopérative ?",
+      "link" : "Rejoignez-nous"
+    },
+
+    "partners" : {
+      "title" : "Nos partenaires",
+      "description" : "Ils nous ont fait confiance !"
+    },
+
+    "touch" : {
+      "title" : "Vous voulez travailler avec nous ?",
+      "link" : "Contactez-nous"
+    }
+
+  },
+
+
+
+
+  "contact": {
+
+    "hero" : {
+      "title" : "Contactez-nous",
+      "description" : "Si vous voulez d'autres infos bla bla bla."
     },
     "h2" : "Laissez-nous un message",
     "p" : "En français, magnis modipsae que lib voloratati andigen daepeditem quiate ut reporemni autem labor. Laceaque quiae sitiorem rest non restibusae es tumquam core posae volor remped modi volor. Doloreiur qui commolu temp dolupta oreprem tibusam. Eumenis consent accullignis autem inisita posae volor conecus resto explabo.",
@@ -59,5 +249,224 @@
       "function" : "Data scientist"
       }
     }
+  },
+
+
+
+
+  "legal": {
+
+    "title" : "Mentions légales",
+    "description" : ""
+
+  },
+
+  "credit": {
+
+    "title" : "Crédits",
+    "description" : ""
+
+  },
+
+  "press": {
+
+    "title" : "Espace presse",
+    "description" : ""
+
+  },
+
+
+
+
+  "fiche": {
+
+    "services" : "Services",
+    "solutions" : "Solutions",
+    "labs" : "Labs",
+    "demos" : "Nos démos",
+
+    "touch" : {
+      "title" : "Vous voulez travailler avec nous ?",
+      "link" : "Contactez-nous"
+    }
+
+  },
+
+  "starter": {
+
+    "1": {
+      "title" : "Service outillé",
+      "description" : "MNX Starter est un service modulable d’extraction et de structuration des connaissances, permettant d’accomplir des taches de veille, d’analyse, de cartographie et de visualisation de données métier et communautaires. Il est composé de :<br><br>1. une solution informatique basée sur l’agencement sur mesure des briques technologiques constituant notre chaîne de traitement des données (en mode Saas ou installée),<br><br>2. l’accompagnement de nos clients à l’implémentation et l’utilisation de notre solution."
+    },
+
+    "2": {
+      "title" : "Approche centrée métier",
+      "description" : "Afin de donner du sens aux traces numériques de la communauté étudiée, le service MNX Starter se connecte aux différentes plate-formes qu’utilisent ses membres, extrait le contenu des informations échangées, l’analyse et crée une carte des interactions entre les acteurs. Ainsi, à chaque acteur est associé un profil sémantique, constitué par l’ensemble des termes du thésaurus qu’il utilise régulièrement dans ses échanges. Dans le but de mieux contextualiser les analyses, nous aidons nos clients à caractériser leurs domaines d'intérêts (sous la forme d'un thésaurus -> lien glossaire). Enfin, les résultats de l’analyse du service MNX Starter peuvent être publiés à travers différents supports et formats."
+    },
+
+    "usecase" : {
+      "title" : "Cas client",
+      "description" : "Ademe",
+      "link" : "-"
+    },
+
+    "partners" : {
+      "title" : "Nos partenaires",
+      "description" : "Ils nous ont fait confiance !"
+    }
+
+  },
+
+  "booster": {
+
+    "1": {
+      "title" : "Service à façon",
+      "description" : "MNX Booster s’adresse aux structures disposant déjà de leur propre solution informatique (CMS/site/blog, intranet, base de connaissance, réseau social d’entreprise, …) et qui souhaitent l’augmenter grâce à notre expertise."
+    },
+
+    "2": {
+      "title" : "S'offrir le Web Sémantique",
+      "description" : "Nous proposons d’enrichir leurs corpus de données à l’aide de métadonnées et de le faire évoluer dans le temps en rendant leur système d’information interopérable avec les briques sémantiques de Mnemotix."
+    },
+
+    "usecase" : {
+      "title" : "Cas client",
+      "description" : "TGC? Ginseng?",
+      "link" : "-"
+    }
+
+  },
+
+  "consulting": {
+
+    "1": {
+      "title" : "",
+      "description" : ""
+    },
+
+    "2": {
+      "title" : "",
+      "description" : ""
+    },
+
+    "usecase" : {
+      "title" : "Cas client",
+      "description" : "",
+      "link" : "-"
+    }
+
+  },
+
+  "training": {
+
+    "1": {
+      "title" : "",
+      "description" : ""
+    },
+
+    "2": {
+      "title" : "",
+      "description" : ""
+    },
+
+    "usecase" : {
+      "title" : "Cas client",
+      "description" : "",
+      "link" : "-"
+    }
+
+  },
+
+  "server": {
+
+    "1": {
+      "title" : "",
+      "description" : "Notre stratégie consiste à augmenter les outils existants plutôt que de les remplacer. Pour cela, MNEMOTIX a mis au point un serveur basé sur un “middleware sémantique” modulaire et personnalisable, destiné à se connecter, à fédérer et à enrichir les applications d’entreprise (intra- ou extra-net) existantes afin de leur conférer de nouvelles capacités d’analyse, de structuration pour une meilleure gestion des compétences et pour le monitoring de communautés."
+    },
+
+    "2": {
+      "title" : "",
+      "description" : "Schéma du MNX Server"
+    },
+
+    "usecase" : {
+      "title" : "Cas client",
+      "description" : "",
+      "link" : "-"
+    }
+
+  },
+
+  "webmarks": {
+
+    "1": {
+      "title" : "Curation assistée",
+      "description" : "Webmarks est une solution de curation collaborative de ressources web composé :<br><br>1. d’un assistant intelligent à la description de ressources Web,<br><br>2. d’une fonctionnalité de WebTracks permettant de créer collaborativement des collections de ressources Web,<br><br>3. des outils d’analyse de supervision et d’animation de communautés."
+    },
+
+    "2": {
+      "title" : "Community Management 3.0",
+      "description" : "Webmarks relève comme challenge de regrouper au sein d’une même solution le meilleur du web sémantique avec les technologies sociales et virales du web 2.0. C’est une plateforme modulable pouvant être adaptée à façon pour :<br><br>1. animer des communautés externes de clients / partenaires (Community Customer Care)<br><br>2. dynamiser un réseau de connaissances et de pratique (Social Business)<br><br>3. révéler les forces vives dans un réseau, détecter les communautés naissantes et faciliter la collaboration (Collaborative Awareness Platforms)<br><br>4. outiller l’innovation ascendante (bottom-up innovation) et la veille collaborative (Collective Intelligence)."
+    },
+
+    "usecase" : {
+      "title" : "Cas client",
+      "description" : "",
+      "link" : "-"
+    }
+
+  },
+
+  "naturopedia": {
+
+    "title" : "Naturopedia",
+
+    "1": {
+      "title" : "",
+      "description" : ""
+    },
+
+    "2": {
+      "title" : "",
+      "description" : ""
+    },
+
+    "usecase" : {
+      "title" : "Cas client",
+      "description" : "",
+      "link" : "-"
+    }
+
+  },
+
+  "cordis": {
+
+    "title" : "Cordis",
+
+    "1": {
+      "title" : "",
+      "description" : ""
+    },
+
+    "2": {
+      "title" : "",
+      "description" : ""
+    },
+
+    "usecase" : {
+      "title" : "Cas client",
+      "description" : "",
+      "link" : "-"
+    }
+
   }
+
+
+
+
+
+
+
+
+
 }

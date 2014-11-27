@@ -1,39 +1,229 @@
 {
   "home": {
+
     "title" : "MNEMOTIX",
+
     "slides" : {
       "link" : "Get started now",
-      "slide1": {
+      "1": {
         "title" : "When data make sense",
         "description" : "Magnis modipsae que lib voloratati andigen daepeditem quiate ut reporemni aut labor. Laceaque quiae sitiorem rest non restibusaes es tumquam core posae volor remped modis volor."
       },
-      "slide2": {
+      "2": {
         "title" : "",
         "description" : ""
       },
-      "slide3": {
+      "3": {
         "title" : "",
         "description" : ""
       },
-      "slide4": {
+      "4": {
         "title" : "",
         "description" : ""
       },
-      "slide5": {
+      "5": {
         "title" : "",
         "description" : ""
       }
     },
+
+    "arguments" : {
+      "link" : "Read More",
+      "1": {
+        "title" : "Donnez un coup d'accélérateur à votre savoir",
+        "description" : "Vous réflechissez à comment mettre vos connaissances à la portée de tous sur le Web ? Mnemotix vous propose des solutions sur mesure pour structurer et décloisonner vos données et vous accompagne dans la conception de vos architectures Web 3.0."
+      },
+      "2": {
+        "title" : "Donnez un second souffle à votre communauté",
+        "description" : "Dans votre activité quotidienne de gestion et d’animation de communauté, vous voulez savoir où sont les communautés invisibles, si il y a des groupes d’intérêts particuliers?, quelles sont des tendances dans les échanges? comment inciter les membres à partager, à s’engager ? comment mesurer l’impact d'une information sur un groupe ? Mnémotix a des solutions."
+      },
+      "3": {
+        "title" : "Intégrez les technologies de demain dans vos solutions",
+        "description" : "Mnemotix est agréé par le Ministère de l'enseignement supérieur et de la recherche pour mener des actions de R&D et d'innovation pour le compte de tiers. Nous vous accompagnons pour monter un dossier BPI, déposer un projet ANR etc..."
+      }
+    },
+
     "demos" : {
-      "h1" : "Want to see our demos ?",
-      "p" : "Magnis modipsae que voloratati andigen daepeditem quiate conecus aut labore. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam explabo.",
-      "btn" : "Live demos"
+      "title" : "Demos",
+      "description" : "Vous souhaitez en savoir plus sur notre savoir faire technologique ?",
+      "link" : "See our demos"
+    },
+
+    "news" : {
+      "title" : "Last news",
+      "description" : "Nos dernières news, bla bla bla"
+    },
+
+    "clients" : {
+      "title" : "Our clients",
+      "description" : "Nous entretenons avec nos clients une relation de confiance et pérenne en les accompagnant tout au long du processus de valorisation de leurs données. Ils nous ont fait confiance :"
     }
+
   },
-  "contact": {
+
+
+
+
+  "footer" : {
+
+    "col1" : {
+      "title" : "Who we are",
+      "description" : "",
+      "link" : "More about us"
+     },
+    
+    "col2" : {
+      "title1" : "Services",
+      "title2" : "Soutions"
+     },
+    
+    "col3" : {
+      "title" : "Resources"
+     },
+
+    "col4" : {
+      "title" : "Latest News",
+      "description" : "",
+      "lang" : "Switch Language"
+     },
+
+    "home" : "Home",
+    "contact" : "Contact",
+    "copyright" : "2014 MNEMOTIX. All rights reserved."
+  },
+
+
+
+
+  "work": {
+
     "hero" : {
-      "h1" : "Get in touch",
-      "p" : "Do you want to know more? We’d love to hear from you!"
+      "title" : "Notre Cap : vous aider à créer des webs de contenus pertinents",
+      "description" : "Nous développons et commercialisons une gamme de <b>services outillés</b> pour vous proposer des solutions concrètes à vos problèmes de structuration de fonds documentaires, d’animation communautaire et d’<b>d’intelligence collective</b> par l’analyse et la valorisation de données métiers."
+    },
+
+    "services" : {
+      "title" : "Nos services outillés",
+      "description" : "Nous nous adaptons à tous les niveaux d’exigence et de budget pour vous accompagner dans votre projet de valorisation de connaissances qu’elles soient issues du Web, de bases métiers ou de plates-formes communautaires.",
+      "link" : "Learn more about it",
+      "1": {
+        "title" : "MNX Starter",
+        "description" : "Vous cherchez une solution abordable, légère et clé en main pour analyser et valoriser vos données métiers ? MNX Starter est un service modulable idéal pour découvrir le potentiel immense du web sémantique appliqué à vos données."
+      },
+      "2": {
+        "title" : "MNX Booster",
+        "description" : "Vous souhaitez passer le cap du web de demain à votre système d'information ? MNX Booster est notre service de développement et d'intégration de briques technologiques à façon pour enrichir votre solution."
+      },
+      "3": {
+        "title" : "MNX Consulting",
+        "description" : "Nous proposons notre expertise en accompagnement technique (AMO), ingénierie logicielle et mise en production de projets innovants."
+      },
+      "4": {
+        "title" : "MNX Training",
+        "description" : ""
+      }
+    },
+
+    "solutions" : {
+      "title" : "Coeur technologique",
+      "description" : "",
+      "link" : "Learn more",
+      "1": {
+        "title" : "MNX Server",
+        "description" : ""
+      },
+      "2": {
+        "title" : "MNX Webmarks",
+        "description" : ""
+      }
+    },
+
+    "labs" : {
+      "title" : "MNX Labs",
+      "description" : ""
+    },
+
+    "touch" : {
+      "title" : "Want to work with us ?",
+      "link" : "Get in touch"
+    }
+
+  },
+
+
+
+
+  "about": {
+
+    "hero" : {
+      "title" : "MNÉMOTIX,",
+      "description" : ""
+    },
+
+    "who" : {
+      "1": {
+        "title" : "Une nouvelle génération d’entreprise informatique",
+        "description" : ""
+      },
+      "2": {
+        "title" : "Enracinés dans la recherche publique",
+        "description" : ""
+      }
+    },
+
+    "motivations" : {
+      "title" : "What drives us",
+      "description" : "",
+      "1": {
+        "title" : "Esprit coopératif",
+        "description" : ""
+      },
+      "2": {
+        "title" : "Transfert d'Innovation",
+        "description" : ""
+      },
+      "3": {
+        "title" : "Transition",
+        "description" : ""
+      }
+    },
+
+    "quotes" : {
+      "title" : "What clients are saying about us"
+    },
+
+    "press" : {
+      "title" : "Want to know more ?",
+      "description" : "",
+      "link" : "Press area"
+    },
+
+    "career" : {
+      "title" : "S'engager avec Mnémotix",
+      "description" : "",
+      "link" : "Rejoignez-nous"
+    },
+
+    "partners" : {
+      "title" : "Partners",
+      "description" : "Ils nous ont fait confiance !"
+    },
+
+    "touch" : {
+      "title" : "Want to work with us ?",
+      "link" : "Get in touch"
+    }
+
+  },
+
+
+
+
+  "contact": {
+
+    "hero" : {
+      "title" : "Get in touch",
+      "description" : "Do you want to know more? We’d love to hear from you!"
     },
     "h2" : "Leave a message",
     "p" : "Magnis modipsae que lib voloratati andigen daepeditem quiate ut reporemni autem labor. Laceaque quiae sitiorem rest non restibusae es tumquam core posae volor remped modi volor. Doloreiur qui commolu temp dolupta oreprem tibusam. Eumenis consent accullignis autem inisita posae volor conecus resto explabo.",
@@ -59,5 +249,224 @@
       "function" : "Data scientist"
       }
     }
+  },
+
+
+
+
+  "legal": {
+
+    "title" : "Legal notices",
+    "description" : ""
+
+  },
+
+  "credit": {
+
+    "title" : "Credits",
+    "description" : ""
+
+  },
+
+  "press": {
+
+    "title" : "Presse area",
+    "description" : ""
+
+  },
+
+
+
+
+  "fiche": {
+
+    "services" : "Services",
+    "solutions" : "Solutions",
+    "labs" : "Labs",
+    "demos" : "Live Demos",
+
+    "touch" : {
+      "title" : "Want to work with us ?",
+      "link" : "Get in touch"
+    }
+
+  },
+
+  "starter": {
+
+    "1": {
+      "title" : "Service outillé",
+      "description" : "MNX Starter est un service modulable d’extraction et de structuration des connaissances, permettant d’accomplir des taches de veille, d’analyse, de cartographie et de visualisation de données métier et communautaires. Il est composé de :<br><br>1. une solution informatique basée sur l’agencement sur mesure des briques technologiques constituant notre chaîne de traitement des données (en mode Saas ou installée),<br><br>2. l’accompagnement de nos clients à l’implémentation et l’utilisation de notre solution."
+    },
+
+    "2": {
+      "title" : "Approche centrée métier",
+      "description" : "Afin de donner du sens aux traces numériques de la communauté étudiée, le service MNX Starter se connecte aux différentes plate-formes qu’utilisent ses membres, extrait le contenu des informations échangées, l’analyse et crée une carte des interactions entre les acteurs. Ainsi, à chaque acteur est associé un profil sémantique, constitué par l’ensemble des termes du thésaurus qu’il utilise régulièrement dans ses échanges. Dans le but de mieux contextualiser les analyses, nous aidons nos clients à caractériser leurs domaines d'intérêts (sous la forme d'un thésaurus -> lien glossaire). Enfin, les résultats de l’analyse du service MNX Starter peuvent être publiés à travers différents supports et formats."
+    },
+
+    "usecase" : {
+      "title" : "Cas client",
+      "description" : "Ademe",
+      "link" : "-"
+    },
+
+    "partners" : {
+      "title" : "Nos partenaires",
+      "description" : "Ils nous ont fait confiance !"
+    }
+
+  },
+
+  "booster": {
+
+    "1": {
+      "title" : "Service à façon",
+      "description" : "MNX Booster s’adresse aux structures disposant déjà de leur propre solution informatique (CMS/site/blog, intranet, base de connaissance, réseau social d’entreprise, …) et qui souhaitent l’augmenter grâce à notre expertise."
+    },
+
+    "2": {
+      "title" : "S'offrir le Web Sémantique",
+      "description" : "Nous proposons d’enrichir leurs corpus de données à l’aide de métadonnées et de le faire évoluer dans le temps en rendant leur système d’information interopérable avec les briques sémantiques de Mnemotix."
+    },
+
+    "usecase" : {
+      "title" : "Cas client",
+      "description" : "TGC? Ginseng?",
+      "link" : "-"
+    }
+
+  },
+
+  "consulting": {
+
+    "1": {
+      "title" : "",
+      "description" : ""
+    },
+
+    "2": {
+      "title" : "",
+      "description" : ""
+    },
+
+    "usecase" : {
+      "title" : "Cas client",
+      "description" : "",
+      "link" : "-"
+    }
+
+  },
+
+  "training": {
+
+    "1": {
+      "title" : "",
+      "description" : ""
+    },
+
+    "2": {
+      "title" : "",
+      "description" : ""
+    },
+
+    "usecase" : {
+      "title" : "Cas client",
+      "description" : "",
+      "link" : "-"
+    }
+
+  },
+
+  "server": {
+
+    "1": {
+      "title" : "",
+      "description" : ""
+    },
+
+    "2": {
+      "title" : "",
+      "description" : "Schéma du MNX Server"
+    },
+
+    "usecase" : {
+      "title" : "Cas client",
+      "description" : "",
+      "link" : "-"
+    }
+
+  },
+
+  "webmarks": {
+
+    "1": {
+      "title" : "Curation assistée",
+      "description" : ""
+    },
+
+    "2": {
+      "title" : "Community Management 3.0",
+      "description" : ""
+    },
+
+    "usecase" : {
+      "title" : "Cas client",
+      "description" : "",
+      "link" : "-"
+    }
+
+  },
+
+  "naturopedia": {
+
+    "title" : "Naturopedia",
+
+    "1": {
+      "title" : "",
+      "description" : ""
+    },
+
+    "2": {
+      "title" : "",
+      "description" : ""
+    },
+
+    "usecase" : {
+      "title" : "Cas client",
+      "description" : "",
+      "link" : "-"
+    }
+
+  },
+
+  "cordis": {
+
+    "title" : "Cordis",
+
+    "1": {
+      "title" : "",
+      "description" : ""
+    },
+
+    "2": {
+      "title" : "",
+      "description" : ""
+    },
+
+    "usecase" : {
+      "title" : "Cas client",
+      "description" : "",
+      "link" : "-"
+    }
+
   }
+
+
+
+
+
+
+
+
+
 }
