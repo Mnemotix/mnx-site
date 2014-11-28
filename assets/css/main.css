@@ -4726,7 +4726,7 @@ input:focus:-ms-input-placeholder {
 	}
 	.grid-blog.col-2.no-sidebar .post,
 	.grid-blog.col-3.no-sidebar .post {
-	    width: 347px;
+	    /*width: 347px;*/
 		padding-bottom: 40px;
 	    margin-left: 25px;
 	    margin-bottom: 25px;
@@ -5846,3 +5846,12 @@ ul.circle li:before {
 	margin-left: -20px;
 	position: absolute;
 }
+
+
+/*
+@media (min-width: 992px) and (max-width: 1024px) {
+	#blog .col-sm-6.col-md-8 {
+		margin-left: 136px;
+		margin-right: -272px;
+	}
+}*/
